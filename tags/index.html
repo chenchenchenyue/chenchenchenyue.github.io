@@ -15,7 +15,7 @@
     <script type="text/javascript">
         // Data Center
         var DC = {
-            reward:	true,
+            reward:	false,
             lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
             v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
             g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
@@ -32,7 +32,7 @@
 <body>
     <div id="loading" class="active"></div>
 
-    <aside id="menu" class="hide" >
+    <aside id="menu"  >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
@@ -47,25 +47,27 @@
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">John Doe</h5>
-          <a href="mailto:277133779@qq.com" title="277133779@qq.com" class="mail">
+          <a href="mailto:1643544132@qq.com" title="1643544132@qq.com" class="mail">
             
-              <span>2</span>
+              <span>1</span>
             
-              <span>7</span>
+              <span>6</span>
             
-              <span>7</span>
+              <span>4</span>
+            
+              <span>3</span>
+            
+              <span>5</span>
+            
+              <span>4</span>
+            
+              <span>4</span>
             
               <span>1</span>
             
               <span>3</span>
             
-              <span>3</span>
-            
-              <span>7</span>
-            
-              <span>7</span>
-            
-              <span>9</span>
+              <span>2</span>
             
               <span>@</span>
             
@@ -146,7 +148,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>tags</span>
+            <span>Tags</span>
             
         </div>
         
@@ -156,16 +158,34 @@
         
     </div>
 </header>
-<header class="content-header page-header">
+<header class="content-header tags-header">
     <img src="https://source.unsplash.com/random/1712x400" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">tags</h1>
+        <h1 class="title">Tags</h1>
         <h5 class="subtitle">
             
         </h5>
         
     </div>
     
+<div class="tabs-bar container">
+    <nav class="tags-list">
+        <a href="/tags" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
+             active">All</a>
+        
+            <a href="/tags/微信小程序/" backup-style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light">微信小程序</a>
+            
+        
+            <a href="/tags/test/" backup-style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">test</a>
+            
+        
+    </nav>
+    <!-- PC show more-->
+    <div class="tags-list-more">
+        <a href="javascript:;" class="action tags-list-item waves-effect waves-circle waves-light"><i class="icon icon-ellipsis-h"></i></a>
+    </div>
+</div>
+
 
 </header>
 
@@ -182,98 +202,82 @@
     <div id="local-search-result"></div>
 </div>
 
-
-<div class="container body-wrap">
-    <article class="page-article fade" itemprop="blogPage">
-        <div class="post-content page-content" id="page-content" itemprop="pageContent">
-            
-            
-        </div>
-        
-            <div class="page-reward">
-    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
-</div>
-
-        
-        
-        <div class="card page-about-me flex-row">
-            <a href="/" class="avatar waves-effect waves-circle waves-light"><img src="/img/avatar.jpg"></a>
-            <div class="content flex-col">
-                <p><strong>John Doe</strong></p>
-                <p><em></em></p>
-                <p></p>
-            </div>
-            <div class="page-share-wrap">
+<div class="container body-wrap fade">
     
+                    <h3 class="archive-separator" id="tag-微信小程序">微信小程序</h3>
+                    <div class="waterfall">
+                        
+                            <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2018-07-02 11:27:01" datetime="2018-07-02T03:27:01.000Z"  itemprop="datePublished">2018-07-02</time>
 
-<div class="page-share" id="pageShare">
-    <ul class="reset share-icons">
       
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/tags/&title=《tags》 — 陈越鹏&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/tags/&title=《tags》 — 陈越鹏&source=" data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      
-    </ul>
- </div>
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/测试/">测试</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/测试/example/">example</a></li></ul></li></ul>
 
 
 
-    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
-        <i class="icon icon-share-alt icon-lg"></i>
-    </a>
-</div>
-
-        </div>
-        
-        
-        <div class="card">   
-           
-
-
-        </div>
-        
-    </article>
-    
-        <div id="reward" class="page-modal reward-lay">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <h3 class="reward-title">
-        <i class="icon icon-quote-left"></i>
-        我们一起来让这个世界有趣一点
-        <i class="icon icon-quote-right"></i>
-    </h3>
-    <div class="reward-content">
-        
-        <div class="reward-code">
-            <img id="rewardCode" src="/img/reward-wechat.jpg" alt="打赏二维码">
-        </div>
-        
-        <label class="reward-toggle">
-            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
-                data-wechat="/img/reward-wechat.jpg" data-alipay="/img/reward-alipay.jpg">
-            <div class="reward-toggle-ctrol">
-                <span class="reward-toggle-item wechat">微信</span>
-                <span class="reward-toggle-label"></span>
-                <span class="reward-toggle-item alipay">支付宝</span>
-            </div>
-        </label>
-        
     </div>
-</div>
+    
 
+
+  
+    <h3 class="post-title " itemprop="name">
+      <a class="post-title-link" href="/2018/07/02/第一次测试/">第一次小小测试</a>
+    </h3>
+  
+
+
+
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/">test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信小程序/">微信小程序</a></li></ul>
+
+    </div>
+    
+  </article>
+</div>
+                        
+                    </div>
+                
+                    <h3 class="archive-separator" id="tag-test">test</h3>
+                    <div class="waterfall">
+                        
+                            <div class="waterfall-item">
+  <article class="article-card archive-article">
+    <div class="post-meta">
+      <time class="post-time" title="2018-07-02 11:27:01" datetime="2018-07-02T03:27:01.000Z"  itemprop="datePublished">2018-07-02</time>
+
+      
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/测试/">测试</a><ul class="article-category-list-child"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/测试/example/">example</a></li></ul></li></ul>
+
+
+
+    </div>
+    
+
+
+  
+    <h3 class="post-title " itemprop="name">
+      <a class="post-title-link" href="/2018/07/02/第一次测试/">第一次小小测试</a>
+    </h3>
+  
+
+
+
+    
+    <div class="post-footer">
+        
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/">test</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/微信小程序/">微信小程序</a></li></ul>
+
+    </div>
+    
+  </article>
+</div>
+                        
+                    </div>
+                
     
 </div>
 
