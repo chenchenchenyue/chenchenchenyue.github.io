@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     
-    <title>Archives: 2018/10 | 陈越鹏</title>
+    <title>Categories: 博客 | 陈越鹏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="keywords" content="">
@@ -108,7 +108,7 @@
               </a>
             </li>
         
-            <li class="">
+            <li class=" active">
               <a href="/categories"  >
                 <i class="icon icon-lg icon-th-list"></i>
                 CATEGORIES
@@ -122,7 +122,7 @@
               </a>
             </li>
         
-            <li class=" active">
+            <li class="">
               <a href="/archives"  >
                 <i class="icon icon-lg icon-archives"></i>
                 ARCHIVES
@@ -148,7 +148,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>Archives</span>
+            <span>Categories: 博客</span>
             
         </div>
         
@@ -158,21 +158,37 @@
         
     </div>
 </header>
-<header class="content-header archives-header">
+<header class="content-header categories-header">
     <img src="https://source.unsplash.com/random/1712x400" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">Archives</h1>
+        <h1 class="title">Categories: 博客</h1>
         <h5 class="subtitle">
             
         </h5>
         
-        <div class="remind">
-            <p>总计文章( <span>5</span> )篇，约( <span>3.7K</span> )字</p>
-            <p>Keep moving😎!!!</p>
-        </div>
-        
     </div>
     
+<div class="tabs-bar container">
+    <nav class="tags-list">
+        <a href="/categories" style="-webkit-order:-1;order:-1" class="tags-list-item waves-effect waves-button waves-light
+            ">全部</a>
+        
+            <a href="/categories/博客/" backup-style="-webkit-order:0;order:0" class="tags-list-item waves-effect waves-button waves-light active">博客</a>
+            
+        
+            <a href="/categories/测试/" backup-style="-webkit-order:1;order:1" class="tags-list-item waves-effect waves-button waves-light">测试</a>
+            
+        
+            <a href="/categories/测试/example/" backup-style="-webkit-order:2;order:2" class="tags-list-item waves-effect waves-button waves-light">example</a>
+            
+        
+    </nav>
+    <!-- PC show more-->
+    <div class="tags-list-more">
+        <a href="javascript:;" class="action tags-list-item waves-effect waves-circle waves-light"><i class="icon icon-ellipsis-h"></i></a>
+    </div>
+</div>
+
 
 </header>
 
@@ -191,10 +207,9 @@
 
 <div class="container body-wrap fade">
     
-                <h3 class="archive-separator">October, 2018</h3>
-                <div class="waterfall">
-            
-        <div class="waterfall-item">
+            <div class="waterfall">
+                
+                    <div class="waterfall-item">
   <article class="article-card archive-article">
     <div class="post-meta">
       <time class="post-time" title="2018-10-03 17:17:07" datetime="2018-10-03T09:17:07.000Z"  itemprop="datePublished">2018-10-03</time>
@@ -225,32 +240,9 @@
     
   </article>
 </div>
+                
+            </div>
         
-        <div class="waterfall-item">
-  <article class="article-card archive-article">
-    <div class="post-meta">
-      <time class="post-time" title="2018-10-03 01:16:10" datetime="2018-10-02T17:16:10.000Z"  itemprop="datePublished">2018-10-03</time>
-
-      
-
-
-    </div>
-    
-
-
-  
-    <h3 class="post-title " itemprop="name">
-      <a class="post-title-link" href="/2018/10/03/IMAPOST/">IMAPOST</a>
-    </h3>
-  
-
-
-
-    
-  </article>
-</div>
-        
-    </div>
     
 </div>
 
@@ -314,7 +306,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/archives/2018/10/&title=陈越鹏&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/child/categories/博客/&title=陈越鹏&pic=http://yoursite.com/child/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -326,7 +318,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/archives/2018/10/&title=陈越鹏&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/child/categories/博客/&title=陈越鹏&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -338,7 +330,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACI0lEQVR42u3aWWrEMBBF0d7/pp0FJFK/wQ64dPUVgpF9Eihq+nzkc/06+jOr5/c3fJ44MGDAeC3j2h7lmT1yT2reCwMGjNMYqwimB03l9XuM/l4YMGDA0K9efbr7G/fPBwMGDBjNp2cFqlsAw4AB40xGlsxlBeee/XgtDgMGjBcy9K77///8yHwDBgwYr2Jk7X43IN4VXpdvgQEDxmiG2/TXQ6SOlwpUpSSGAQPGaEa/BJatdmWlcpUywoABYwQjKyz10YKeYuphHQYMGLMZzUhACZEKvr8BBgwYsxnuWLFZ4WqabsYbYcCAcRgjW9JqVjRuKGVhwIAxlOGWoFkDTg/KbukLAwaMMxnZuLFZaVUC95evggEDxlCG3vp354ZKSG0WOJb/BxgwYIxjuEVsVojqyaKSXBozWBgwYAxlPLGk1dxp74zAgAFjHOOSj5vk7Z/s080/MlwYMGAMZWSBMltLbZp07pgBBgwY8xj6RW5zP1vdcMcPMGDAOIfhFpbZyUjVsgUMGDAGMfolCX0w4LbwpAIYBgwYBzCaIWK2SNGkiV9SQxgwYAxi9ImdG5rdZQ6JCgMGjNEMd5SoN/Sbdlu2XgYDBozZjD6xy2akfcCFAQPGaQw98OkppttQu60WhwEDxvEMd9yYNdrsgA4DBgwY8qjATfXcJHLZ1IMBA8YBjGaRyx1V6gtnxqgVBgwYoxl66eg2xW5rpRVNPRgwYLyc8QPmXXRyYz604AAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKUlEQVR42u3aQQ6DMAxEUe5/aXoARJgZB6o4P6tKUMhLJdeJfRzyOC/jevV6p/LMu7ccbwwYMGAsyziHQ79nPNG7Z46XyXgvDBgwNmAok9Cnm8VG/WkwYMCAMX6cG3z1AA0DBgwYcxlu6BwniH8LuDBgwFiK4aZrbsBVpvXRXhwGDBgLMvRT9+8/v1LfgAEDxlKM0xxuEMwSQXtWMGDAaM2oHOXP6oWQNqjDp8GAAWNPhht2lY1oVgYYh/IHPQwYMJoy3JKk8i19otl3YcCA0ZuhfM0tZM5KKI30EQYMGK0Z+oR0pM5TFsv4S4ABA8YGDLflQmFnd4bvggEDRlNGBqjco4dU4w8ABgwYrRn68ZlyuJ9NJSuaPqSGMGDAaMTQG7z00mMWjt001Ni+woABox2jEnD11i69gUNqFIMBA0ZrRpbqKW0QWfqof7Z/JRgwYCzLOM2hrITb5lVfIBgwYPRmTDirE65myWXpThgwYLRjVEJn/cgsC7i3LRcwYMDYjKGndC44e6/UbAEDBowtGZVpKUf/2bngbSETBgwYGzDcDWd2uJY1ihmbWBgwYDRizC0MZClg9hyjuw0GDBiLMyo1waypS1+OSuIIAwaMfozKEb9+1S1S2sdzMGDA2IChbFbndjhUkEZhAAYMGFsyslSvMl1pWWHAgAHDbPByr7pB1qjEwoABoxGjMq0srVTaMoyEEgYMGK0ZlUTNLRKMJ501mcGAAaM14wdLFQPxSliymAAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 

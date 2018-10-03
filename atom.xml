@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/child/"/>
-  <updated>2018-10-02T17:16:10.404Z</updated>
+  <updated>2018-10-03T09:32:47.105Z</updated>
   <id>http://yoursite.com/child/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>hexo-theme-mellow博客主题的设置</title>
+    <link href="http://yoursite.com/child/2018/10/03/hexo-theme-mellow%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%A2%98%E7%9A%84%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://yoursite.com/child/2018/10/03/hexo-theme-mellow博客主题的设置/</id>
+    <published>2018-10-03T09:17:07.000Z</published>
+    <updated>2018-10-03T09:32:47.105Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="hexo-theme-mellow主题设置"><a href="#hexo-theme-mellow主题设置" class="headerlink" title="hexo-theme-mellow主题设置"></a>hexo-theme-mellow主题设置</h1><h2 id="下载主题"><a href="#下载主题" class="headerlink" title="下载主题"></a>下载主题</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github.com:codefine/hexo-theme-mellow.git themes/mellow</span><br></pre></td></tr></table></figure><p>  themes/mellow 指的是将下载文件放到themes文件夹下，并且文件名为mellow</p><h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p> 在hexo的文件夹下打开_config.yml，修改主题</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme:  mellow</span><br></pre></td></tr></table></figure><p>此时主题已经激活</p><h2 id="修改自定义主题"><a href="#修改自定义主题" class="headerlink" title="修改自定义主题"></a>修改自定义主题</h2><h4 id="修改图片"><a href="#修改图片" class="headerlink" title="修改图片"></a>修改图片</h4><p>  <a href="https://source.unsplash.com/" target="_blank" rel="noopener"></a>这是一个随机图片的网址，你在背景图上使用，每次刷新都会更新背景。效果图如下</p><figure class="image-box">                <img src="C:\Users\MECHREVO\Desktop\QQ图片20181003172825.png" alt="" title="" class="">                <p></p>            </figure><figure class="image-box">                <img src="C:\Users\MECHREVO\Desktop\QQ图片20181003172850.png" alt="" title="" class="">                <p></p>            </figure><h4 id="整理标签、分档、分类等"><a href="#整理标签、分档、分类等" class="headerlink" title="整理标签、分档、分类等"></a>整理标签、分档、分类等</h4><p>先使用<code>hexo new page tags</code>会在hexo博客的source文件夹下生成一个tags文件，与博客文章文件夹同在source下</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;hexo-theme-mellow主题设置&quot;&gt;&lt;a href=&quot;#hexo-theme-mellow主题设置&quot; class=&quot;headerlink&quot; title=&quot;hexo-theme-mellow主题设置&quot;&gt;&lt;/a&gt;hexo-theme-mellow主题设置&lt;/
+      
+    
+    </summary>
+    
+      <category term="博客" scheme="http://yoursite.com/child/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="hexo" scheme="http://yoursite.com/child/tags/hexo/"/>
+    
+      <category term="theme" scheme="http://yoursite.com/child/tags/theme/"/>
+    
+  </entry>
   
   <entry>
     <title>IMAPOST</title>
