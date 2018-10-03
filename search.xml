@@ -32,6 +32,14 @@
         <content type="html"><![CDATA[<p>#h1</p><p>##h1</p><p>###h1</p><h1 id="This-is-an-H1"><a href="#This-is-an-H1" class="headerlink" title="This is an H1"></a>This is an H1</h1><h2 id="This-is-an-H2"><a href="#This-is-an-H2" class="headerlink" title="This is an H2"></a>This is an H2</h2><p><a href="http://example.com/" target="_blank" rel="noopener">http://example.com/</a><br><br><a href="http://example.com/" target="_blank" rel="noopener">ds</a></p><p>我只是试试10yue试试</p>]]></content>
       
       
+      <categories>
+          
+          <category> 测试 </category>
+          
+          <category> example </category>
+          
+      </categories>
+      
       
         <tags>
             
