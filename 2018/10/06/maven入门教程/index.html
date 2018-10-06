@@ -262,6 +262,71 @@
                 <p></p>
             </figure>
 <p>2.点击左上角file选择新建maven项目，新建项目完成</p>
+<p>3.<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven9.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven9.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure></p>
+<p>webapp  指网站类型</p>
+<p>4.项目新建完成后会出现错误</p>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven10.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven10.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>这种情况指的是未配置tomcat环境，右键项目选择build path，你会发现没有Tomcat，点击add library，选择server Runtime，选中tomcat，添加</p>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven11.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven11.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven12.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven12.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven13.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven13.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>在上图你会看到jre的版本是1.5，这是maven默认的版本，而其实我们的jre并不是这个版本(像我的是1.8)，我们需要更改jre版本，在pom.xml里面的 <code>&lt;build&gt;</code>标签里加入如下代码 </p>
+<p><code>&lt;plugins&gt;
+​            &lt;!-- 修改maven默认的JRE编译版本，1.8代表JRE编译的版本，根据自己的安装版本选择1.7或1.8 --&gt;
+​            &lt;plugin&gt;
+​                &lt;groupId&gt;org.apache.maven.plugins&lt;/groupId&gt;
+​                &lt;artifactId&gt;maven-compiler-plugin&lt;/artifactId&gt;
+​                &lt;configuration&gt;
+​                    &lt;source&gt;1.8&lt;/source&gt;
+​                    &lt;target&gt;1.8&lt;/target&gt;
+​                &lt;/configuration&gt;
+​            &lt;/plugin&gt;
+​        &lt;/plugins&gt;</code></p>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven14.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven14.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>右键项目，点击最底下的properties，在project faces里更换java版本，然后应用，然后update maven。你可能会疑问为什么不直接修改版本，你会发现，如果你直接修改版本或者在build path里修改jre库,添加你自己库的路径，你会发现这时候虽然能修改版本，当你update maven时，版本号依然会回到1.5。</p>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven15.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven15.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p><a rel=maven入门教程 href="undefined" class="swipebox" title=<img src="" alt="1111">><img src="" alt="1111"></a></p>
+<p>在修改java版本的时候，第一张图，你会发现，Dynamic web Module的版本很低（默认2.3），我们也需要修改这个版本。首先将webapp下的web.xml删除</p>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven16.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven16.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>在project facets页面，一定先修改版本号选到合适的版本，例如4.0，然后取消勾√，点击apply应用，然后打上勾√，这时候下方出现一个超链接</p>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven17.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven17.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>点击进入，勾选添加web.xml，选择路径，点击ok</p>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven18.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven18.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>5.补齐source floder</p>
+<figure class="image-box">
+                <a rel=maven入门教程 href="http://pf71g6dle.bkt.clouddn.com/maven19.png" class="swipebox" title=undefined><img src="http://pf71g6dle.bkt.clouddn.com/maven19.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
 <h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><p>1.<a href="https://www.cnblogs.com/eagle6688/p/7838224.html" target="_blank" rel="noopener">https://www.cnblogs.com/eagle6688/p/7838224.html</a></p>
 <p>2.<a href="https://blog.csdn.net/qidasheng2012/article/details/78152581" target="_blank" rel="noopener">https://blog.csdn.net/qidasheng2012/article/details/78152581</a></p>
 
@@ -271,7 +336,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2018-10-05T17:04:59.759Z" itemprop="dateUpdated">2018-10-06 01:04:59</time>
+    最后更新时间：<time datetime="2018-10-06T16:20:56.225Z" itemprop="dateUpdated">2018-10-07 00:20:56</time>
 </span><br>
 
 
