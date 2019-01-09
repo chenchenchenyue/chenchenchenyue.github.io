@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     
     
-    <title>hexo博客的上传 | 陈越鹏</title>
+    <title>Mybatis延迟加载 | 陈越鹏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="博客">
+    <meta name="keywords" content="Mybatis,后端">
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="/css/third-party/swipebox.min.css?v=1.3.2">
     <link rel="stylesheet" href="/css/style.css?v=1.3.2">
@@ -148,7 +148,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>hexo博客的上传</span>
+            <span>Mybatis延迟加载</span>
             
         </div>
         
@@ -161,11 +161,11 @@
 <header class="content-header post-header">
     <img src="https://source.unsplash.com/random/1712x400" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">hexo博客的上传</h1>
+        <h1 class="title">Mybatis延迟加载</h1>
         <h5 class="subtitle">
             
-                <time datetime="2019-01-08T14:44:03.000Z" itemprop="datePublished" class="page-time">
-  2019-01-08
+                <time datetime="2019-01-09T08:28:22.000Z" itemprop="datePublished" class="page-time">
+  2019-01-09
 </time>
 
 
@@ -192,12 +192,12 @@
 
 
 <div class="container body-wrap">
-    <article id="post-hexo博客的上传"
+    <article id="post-Mybatis延迟加载"
   class="post-article article-type-post" itemprop="blogPost">
     <div class="post-card">
-        <h1 class="post-card-title">hexo博客的上传</h1>
+        <h1 class="post-card-title">Mybatis延迟加载</h1>
         <div class="post-meta">
-            <time class="post-time" title="2019-01-08 22:44:03" datetime="2019-01-08T14:44:03.000Z"  itemprop="datePublished">2019-01-08</time>
+            <time class="post-time" title="2019-01-09 16:28:22" datetime="2019-01-09T08:28:22.000Z"  itemprop="datePublished">2019-01-09</time>
 
             
 
@@ -211,19 +211,24 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             
-            <h2 id="编辑软件：Typora百度去官网即可安装（免费且中文版）"><a href="#编辑软件：Typora百度去官网即可安装（免费且中文版）" class="headerlink" title="编辑软件：Typora百度去官网即可安装（免费且中文版）"></a>编辑软件：Typora百度去官网即可安装（免费且中文版）</h2><h3 id="在hexo的文件下右键Git-Bash-Here直接进入部署路径下"><a href="#在hexo的文件下右键Git-Bash-Here直接进入部署路径下" class="headerlink" title="在hexo的文件下右键Git Bash Here直接进入部署路径下"></a>在hexo的文件下右键Git Bash Here直接进入部署路径下</h3><h3 id="hexo-new-“xxxxx”-——-新建一个文章"><a href="#hexo-new-“xxxxx”-——-新建一个文章" class="headerlink" title="==hexo new “xxxxx”==——-新建一个文章"></a>==hexo new “xxxxx”==——-新建一个文章</h3><h3 id="在Typora软件中打开-source-posts文件夹编辑博客"><a href="#在Typora软件中打开-source-posts文件夹编辑博客" class="headerlink" title="在Typora软件中打开/source/_posts文件夹编辑博客"></a>在Typora软件中打开/source/_posts文件夹编辑博客</h3><h3 id="hexo-clean-——-清除缓存文件-和已生成的静态文件"><a href="#hexo-clean-——-清除缓存文件-和已生成的静态文件" class="headerlink" title="==hexo clean==——-清除缓存文件  和已生成的静态文件"></a>==hexo clean==——-清除缓存文件  和已生成的静态文件</h3><h3 id="hexo-g-——-生成静态文件"><a href="#hexo-g-——-生成静态文件" class="headerlink" title="==hexo g==——-生成静态文件"></a>==hexo g==——-生成静态文件</h3><h3 id="hexo-d-——-部署网站"><a href="#hexo-d-——-部署网站" class="headerlink" title="==hexo d==——-部署网站"></a>==hexo d==——-部署网站</h3>
+            <h1 id="Mybatis延迟加载"><a href="#Mybatis延迟加载" class="headerlink" title="Mybatis延迟加载"></a>Mybatis延迟加载</h1><h3 id="mybatis核心配置文件mybatis-config-xml"><a href="#mybatis核心配置文件mybatis-config-xml" class="headerlink" title="mybatis核心配置文件mybatis-config.xml"></a>mybatis核心配置文件mybatis-config.xml</h3><p><a href="http://chen.cypeng.cn/Mybatis_mybatis-config.xml" target="_blank" rel="noopener">mybatis-config.xml文件</a></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span><br><span class="line"><span class="meta">&lt;!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置全局属性--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"logImpl"</span> <span class="attr">value</span>=<span class="string">"LOG4J"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"cacheEnabled"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--下划线转驼峰--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"mapUnderscoreToCamelCase"</span> <span class="attr">value</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">typeAlias</span> <span class="attr">type</span>=<span class="string">"com.lly.pojo.Comment"</span> <span class="attr">alias</span>=<span class="string">"_Comment"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><strong>只需要在xml文件里加入<settings>标签及其中内容即可</settings></strong></p>
+<h3 id="延迟加载原理"><a href="#延迟加载原理" class="headerlink" title="延迟加载原理"></a>延迟加载原理</h3><p><strong>当我们使用多表联合查询时常使用延迟加载提高查询效率</strong></p>
+<p><strong>总结稍后加上</strong></p>
+
         </div>
         
 <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-01-08T15:05:43.269Z" itemprop="dateUpdated">2019-01-08 23:05:43</time>
+    最后更新时间：<time datetime="2019-01-09T09:09:28.379Z" itemprop="dateUpdated">2019-01-09 17:09:28</time>
 </span><br>
 
 
         
-        转载注明出处，原文地址：<a href="/2019/01/08/hexo博客的上传/" target="_blank" rel="external">https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/</a>
+        转载注明出处，原文地址：<a href="/2019/01/09/Mybatis延迟加载/" target="_blank" rel="external">https://chenchenchenyue.github.io/2019/01/09/Mybatis延迟加载/</a>
         
     </div>
     <footer>
@@ -243,7 +248,7 @@
         
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Mybatis/">Mybatis</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/后端/">后端</a></li></ul>
 
             <div class="page-share-wrap">
     
@@ -252,7 +257,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/&title=《hexo博客的上传》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2019/01/09/Mybatis延迟加载/&title=《Mybatis延迟加载》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -264,7 +269,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/&title=《hexo博客的上传》 — 陈越鹏&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2019/01/09/Mybatis延迟加载/&title=《Mybatis延迟加载》 — 陈越鹏&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -287,21 +292,14 @@
         
     </div>
     
-<nav class="post-nav flex-row flex-justify-between">
-  
-    <div class="prev">
-      <a href="/2019/01/09/Mybatis延迟加载/" id="post-prev" class="post-nav-link">
-        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Mybatis延迟加载</h4>
-      </a>
-    </div>
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
   
 
   
     <div class="next">
-      <a href="/2019/01/08/SSM整合搭建/" id="post-next" class="post-nav-link">
+      <a href="/2019/01/08/hexo博客的上传/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">SSM整合搭建</h4>
+        <h4 class="title">hexo博客的上传</h4>
       </a>
     </div>
   
@@ -313,7 +311,7 @@
         <aside class="post-widget">
             <nav class="post-toc-wrap" id="post-toc">
                 <strong>目录</strong>
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编辑软件：Typora百度去官网即可安装（免费且中文版）"><span class="post-toc-number">1.</span> <span class="post-toc-text">编辑软件：Typora百度去官网即可安装（免费且中文版）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在hexo的文件下右键Git-Bash-Here直接进入部署路径下"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">在hexo的文件下右键Git Bash Here直接进入部署路径下</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hexo-new-“xxxxx”-——-新建一个文章"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">==hexo new “xxxxx”==——-新建一个文章</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在Typora软件中打开-source-posts文件夹编辑博客"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">在Typora软件中打开/source/_posts文件夹编辑博客</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hexo-clean-——-清除缓存文件-和已生成的静态文件"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">==hexo clean==——-清除缓存文件  和已生成的静态文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hexo-g-——-生成静态文件"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">==hexo g==——-生成静态文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hexo-d-——-部署网站"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">==hexo d==——-部署网站</span></a></li></ol></li></ol>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Mybatis延迟加载"><span class="post-toc-number">1.</span> <span class="post-toc-text">Mybatis延迟加载</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#mybatis核心配置文件mybatis-config-xml"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">mybatis核心配置文件mybatis-config.xml</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#延迟加载原理"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">延迟加载原理</span></a></li></ol></li></ol></li></ol>
             </nav>
             <div class="toc-bar"><div>
         </aside>
@@ -409,7 +407,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/&title=《hexo博客的上传》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2019/01/09/Mybatis延迟加载/&title=《Mybatis延迟加载》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -421,7 +419,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/&title=《hexo博客的上传》 — 陈越鹏&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2019/01/09/Mybatis延迟加载/&title=《Mybatis延迟加载》 — 陈越鹏&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -433,7 +431,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACpUlEQVR42u3aQW7DQAgF0Nz/0u22UmTnA0PqxfOqSix73lQaCPB6xdfP2/X38/d77p+TfH7/rsMXHh4e3njpV4+evPJ+I662Jl/P5ebi4eHhrfGSBd2fuveMPGDcU6sBBg8PD+85vGTRSZabBJj8fjw8PLxn8hLSJEHPCx94eHh4/8vLH50c3HnC3Vv6Sq0FDw8PL+b1irD/+/dKfw8PDw9v3FU/FSTmYaO5Wjw8PLwF3qS4UH3xPBRV14mHh4e3wasuOi9ATA70/JkfvsXDw8P7Cq9KyttXyULzFloUMPDw8PDWeN8ckLpfUFLIKAQwPDw8vDVe8lO/Fzyq31aHEsoNMDw8PLxDvElTKi+8Vou5eZD40N/Dw8PDO8qrHvqFEmrxiE+GFarpOB4eHt4er5dqT4q28wLxJE3Hw8PDm/DyJLh3Z6+wW8VcPg0PDw9vmZeHh0kYSNL03lDC5dAVHh4e3lFelTRpnuUbkW9ruUyMh4eHd5RXHYSqHujVtllviz+EBDw8PLwxbxRDqiNQvWbVpM2Gh4eHt8DrHcd5Op4XZHvl3ejfg4eHh/cVXq+kmwOqhYZRsMHDw8Nb4PXS5eRBp4YAeo06PDw8vD3epGCav3hSzmgm03h4eHjLvPmIwEaRIh/2KrfB8PDw8BZ4Z4cAku2bvDeaicDDw8Nb41VfUKXmBVw8PDy85/OST5LkeNJI66XsUTECDw8Pb8z7KV552l0utrYaZh+QeHh4eAu8Xil2MmqQjAjkW3kAhoeHh9fizVPk3ihA8kk+htVMrPHw8PAGvHljbH705xtU2Cw8PDy8x/CqwwSjjH4SkPDw8PAezEuS3cmh3wsweHh4eHu8alpcLf7mg1P395fXhoeHh7fAm//gn4wIVIu/IwYeHh7elPcLgYAW22SD2+0AAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACsUlEQVR42u3ay27CMBAF0P7/T9NtpYrkzsOQxcmqghB8XMkerufnJ75e8fX/U9evXN/59/V3n1248PDw8FaH/u6e5Cvf3Xn9/OoTrqcYDw8P7xwvH1xyZzL05AnXvGSDwcPDw3sO73rQCSYfbvV+PDw8vKfx8vt7BfqXNwY8PDy8mFd9dHVZz6dsMn14eHh4n+Hlp0jP+fvI+R4eHh7eakNAHstWD7eqYXFhtHh4eHgHePmCm5PmZW7ewhV9Fg8PD2+VV90Aqm1SvQW9GmG8HQMeHh7eYd68LSDZEvLlPim4bzYePDw8vGO8aoA7aajqBRl52NH8rYCHh4dX5OVhQb70996dBBM3PRF4eHh4q7ytZX1yuNU7SIvO9/Dw8PBWedeLdR469Mrl/Nt7pTweHh7eCV5SsCbvJodV1eB4/kw8PDy8c7zqI6rHY5MWhNHT8PDw8I7xel+QbxJ5mZ5M6KinDA8PD2/M6xXK1Vg2P76aX80OCDw8PLwWbx49TOLXXkA8+h/i4eHhtXh5gVtdb3utVL2mqyhrwcPDw1vlJZFEjslL3ryJKn/3JmvBw8PDW+Jdl7OTojYZYrP2z5uu8PDw8I7xquVsL5ztTU11K8LDw8P7DG/SGrUVOpQB1+1ieHh4eAd488i1GsVWQ4oqplyO4+Hh4bV4hWA0noLkmb04I58IPDw8vM/wduPd3WOtfFLw8PDwvsvrNQf0lvJylJCU+Hh4eHirvFfxSmZrUqBXi++bz+Lh4eEd4PXOieZNUUlJnU/QCIaHh4fX4vUePW+TyjeYhf4IPDw8vAO8aoE7GdbuDnYzWXh4eHgP4FUD392gttBuhYeHh/cwXt4glSMnLQiVIz88PDy8HV61NepmOW7FE/MxjGJcPDw8vE6+2vzB32sR6BXcIwYeHh7elPcLqTYNAWDwzNsAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 

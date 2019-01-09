@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chenchenchenyue.github.io/"/>
-  <updated>2019-01-08T15:05:43.269Z</updated>
+  <updated>2019-01-09T09:09:28.379Z</updated>
   <id>https://chenchenchenyue.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Mybatis延迟加载</title>
+    <link href="https://chenchenchenyue.github.io/2019/01/09/Mybatis%E5%BB%B6%E8%BF%9F%E5%8A%A0%E8%BD%BD/"/>
+    <id>https://chenchenchenyue.github.io/2019/01/09/Mybatis延迟加载/</id>
+    <published>2019-01-09T08:28:22.000Z</published>
+    <updated>2019-01-09T09:09:28.379Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Mybatis延迟加载"><a href="#Mybatis延迟加载" class="headerlink" title="Mybatis延迟加载"></a>Mybatis延迟加载</h1><h3 id="mybatis核心配置文件mybatis-config-xml"><a href="#mybatis核心配置文件mybatis-config-xml" class="headerlink" title="mybatis核心配置文件mybatis-config.xml"></a>mybatis核心配置文件mybatis-config.xml</h3><p><a href="http://chen.cypeng.cn/Mybatis_mybatis-config.xml" target="_blank" rel="noopener">mybatis-config.xml文件</a></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span><br><span class="line"><span class="meta">&lt;!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--配置全局属性--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"logImpl"</span> <span class="attr">value</span>=<span class="string">"LOG4J"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"cacheEnabled"</span> <span class="attr">value</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--下划线转驼峰--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">"mapUnderscoreToCamelCase"</span> <span class="attr">value</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">typeAlias</span> <span class="attr">type</span>=<span class="string">"com.lly.pojo.Comment"</span> <span class="attr">alias</span>=<span class="string">"_Comment"</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure><p><strong>只需要在xml文件里加入<settings>标签及其中内容即可</settings></strong></p><h3 id="延迟加载原理"><a href="#延迟加载原理" class="headerlink" title="延迟加载原理"></a>延迟加载原理</h3><p><strong>当我们使用多表联合查询时常使用延迟加载提高查询效率</strong></p><p><strong>总结稍后加上</strong></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Mybatis延迟加载&quot;&gt;&lt;a href=&quot;#Mybatis延迟加载&quot; class=&quot;headerlink&quot; title=&quot;Mybatis延迟加载&quot;&gt;&lt;/a&gt;Mybatis延迟加载&lt;/h1&gt;&lt;h3 id=&quot;mybatis核心配置文件mybatis-config-x
+      
+    
+    </summary>
+    
+    
+      <category term="Mybatis" scheme="https://chenchenchenyue.github.io/tags/Mybatis/"/>
+    
+      <category term="后端" scheme="https://chenchenchenyue.github.io/tags/%E5%90%8E%E7%AB%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo博客的上传</title>
