@@ -230,10 +230,9 @@
                 <p></p>
             </figure>
 <p>加入这条语句即可正常返回json数据</p>
-<p>查到别的博客解释：转换json时：第一种方法使用&lt;mvc:annotation-driven /&gt;注解驱动配置json转换器，或者第二种方法配置注解适配器org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter的话，在适配器中配置json转换器</p>
-<p>追加:&lt;mvc:annotation-driven /&gt;启动所有转换服务</p>
-<p>&lt;mvc:annotation-driven conversion-service=“xxxxx” /&gt;</p>
-<p>‘&lt;bean id=”xxxxx” class=“org.xcxx”&gt;启动xxxxx转换服务</p>
+<p>查到别的博客解释：转换json时：第一种方法使用&lt;mvc:annotation-driven /&gt;注解驱动配置json转换器，或者第二种方法</p>
+<p>“<a href="mvc:annotation-driven" target="_blank" rel="noopener">mvc:annotation-driven</a>   <a href="mvc:message-converters" target="_blank" rel="noopener">mvc:message-converters</a><br>​            <bean class="org.springframework.http.converter.StringHttpMessageConverter"><br>​            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"><br>   &lt;/mvc:message-converters&gt;<br>&lt;/mvc:annotation-driven&gt;”</bean></bean></p>
+<p>追加:1.&lt;mvc:annotation-driven /&gt;自动注册DefaultAnnotationHandlerMapping与AnnotationMethodHandlerAdapter 两个bean,是spring MVC为@Controllers分发请求所必须的，即解决了@Controller注解使用的前提配置，是一种简写形式，完全可以手动配置替代这种简写形式，简写形式可以让初学都快速应用默认配置方案。</p>
 <h3 id="2-2-ResponseBody返回一个字符串"><a href="#2-2-ResponseBody返回一个字符串" class="headerlink" title="2.2 @ResponseBody返回一个字符串"></a>2.2 @ResponseBody返回一个字符串</h3><figure class="image-box">
                 <a rel=springMVC json数据交互 href="http://chen.cypeng.cn/Spring%20json3-1.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/Spring%20json3-1.png" alt="" title="" class=""></a>
                 <p></p>
@@ -252,7 +251,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-01-11T07:51:38.897Z" itemprop="dateUpdated">2019-01-11 15:51:38</time>
+    最后更新时间：<time datetime="2019-01-11T10:14:53.578Z" itemprop="dateUpdated">2019-01-11 18:14:53</time>
 </span><br>
 
 
