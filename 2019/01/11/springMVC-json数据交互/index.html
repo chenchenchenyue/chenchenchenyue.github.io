@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>springMVC json数据交互 | 陈越鹏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="Spring mvc,json">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/third-party/swipebox.min.css?v=1.3.2">
+    <link rel="stylesheet" href="/css/style.css?v=1.3.2">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+    
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Chen YuePeng</h5>
+          <a href="mailto:1643544132@qq.com" title="1643544132@qq.com" class="mail">
+            
+              <span>1</span>
+            
+              <span>6</span>
+            
+              <span>4</span>
+            
+              <span>3</span>
+            
+              <span>5</span>
+            
+              <span>4</span>
+            
+              <span>4</span>
+            
+              <span>1</span>
+            
+              <span>3</span>
+            
+              <span>2</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/chenchenchenyue" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                HOME
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                CATEGORIES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                TAGS
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                ARCHIVES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-plus-square"></i>
+                CUSTOM
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>springMVC json数据交互</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="https://source.unsplash.com/random/1712x400" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">springMVC json数据交互</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-01-11T03:38:12.000Z" itemprop="datePublished" class="page-time">
+  2019-01-11
+</time>
+
+
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/后端/">后端</a></li></ul>
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-springMVC-json数据交互"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">springMVC json数据交互</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-01-11 11:38:12" datetime="2019-01-11T03:38:12.000Z"  itemprop="datePublished">2019-01-11</time>
+
+            
+	<ul class="article-category-list"><li class="article-category-list-item"><a class="article-category-list-link" href="/categories/后端/">后端</a></li></ul>
+
+
+
+            
+
+            
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <h1 id="spring-mvc与前端进行数据交互"><a href="#spring-mvc与前端进行数据交互" class="headerlink" title="spring mvc与前端进行数据交互"></a>spring mvc与前端进行数据交互</h1><h2 id="1-最直接的方法-gson"><a href="#1-最直接的方法-gson" class="headerlink" title="1.最直接的方法 gson"></a>1.最直接的方法 gson</h2><p>gson的使用，参考下方链接</p>
+<p><a href="https://blog.csdn.net/lk_blog/article/details/7685190" target="_blank" rel="noopener">https://blog.csdn.net/lk_blog/article/details/7685190</a></p>
+<h2 id="2-通过注解-Responsebody返回json"><a href="#2-通过注解-Responsebody返回json" class="headerlink" title="2.通过注解@Responsebody返回json"></a>2.通过注解@Responsebody返回json</h2><h3 id="2-1-ResponseBody-返回对象"><a href="#2-1-ResponseBody-返回对象" class="headerlink" title="2.1 @ResponseBody 返回对象"></a>2.1 @ResponseBody 返回对象</h3><h5 id="导入3个jar包"><a href="#导入3个jar包" class="headerlink" title="导入3个jar包"></a>导入3个jar包</h5><p>jackson-annotations-2.9.6.jar   ——json转换注解包</p>
+<p>jackson-core-2.9.4.jar  ——-json转换核心包</p>
+<p>jackson-databind-2.9.4.jar   —–json转换的数据绑定包</p>
+<h5 id="controller层"><a href="#controller层" class="headerlink" title="controller层"></a>controller层</h5><figure class="image-box">
+                <a rel=springMVC json数据交互 href="http://chen.cypeng.cn/Spring%20json1.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/Spring%20json1.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>这时候运行会报错 No converter found for return value of type: class java.util.ArrayList；</p>
+<h5 id="百度查到需要改web-xml文件"><a href="#百度查到需要改web-xml文件" class="headerlink" title="百度查到需要改web.xml文件"></a>百度查到需要改web.xml文件</h5><figure class="image-box">
+                <a rel=springMVC json数据交互 href="http://chen.cypeng.cn/Spring%20json2.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/Spring%20json2.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>加入这条语句即可正常返回json数据</p>
+<p>查到别的博客解释：转换json时：第一种方法使用&lt;mvc:annotation-driven /&gt;注解驱动配置json转换器，或者第二种方法配置注解适配器org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter的话，在适配器中配置json转换器</p>
+<p>追加:&lt;mvc:annotation-driven /&gt;启动所有转换服务</p>
+<p>&lt;mvc:annotation-driven conversion-service=“xxxxx” /&gt;</p>
+<p>‘&lt;bean id=”xxxxx” class=“org.xcxx”&gt;启动xxxxx转换服务</p>
+<h3 id="2-2-ResponseBody返回一个字符串"><a href="#2-2-ResponseBody返回一个字符串" class="headerlink" title="2.2 @ResponseBody返回一个字符串"></a>2.2 @ResponseBody返回一个字符串</h3><figure class="image-box">
+                <a rel=springMVC json数据交互 href="http://chen.cypeng.cn/Spring%20json3-1.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/Spring%20json3-1.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+<p>返回字符串必须设置字符编码，在@RequestMapping注释里加上produces=”application/json;charset=utf-8”</p>
+<p>。否则会中文会出现“?”</p>
+<h2 id="3-RequestBody将请求的json数据绑定到形参"><a href="#3-RequestBody将请求的json数据绑定到形参" class="headerlink" title="3.@RequestBody将请求的json数据绑定到形参"></a>3.@RequestBody将请求的json数据绑定到形参</h2><p>public String login1(@RequestBody Person user) {</p>
+</div>
+<h2 id="4-json返回值去掉null空值"><a href="#4-json返回值去掉null空值" class="headerlink" title="4.json返回值去掉null空值"></a>4.json返回值去掉null空值</h2><p>有时候我们只想查询pojo类中的一部分属性值，但是这时候将结果集对象转换成json，没有查询的属性值就对应成null</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#123;<span class="attr">"bookId"</span>:<span class="string">"1011"</span>,<span class="attr">"bookName"</span>:<span class="string">"java程序设计"</span>,<span class="attr">"author"</span>:<span class="string">"刘备"</span>,<span class="attr">"price"</span>:<span class="literal">null</span>,<span class="attr">"press"</span>:<span class="literal">null</span>,<span class="attr">"kind"</span>:<span class="literal">null</span>,<span class="attr">"cnt"</span>:<span class="literal">null</span>&#125;,&#123;<span class="attr">"bookId"</span>:<span class="string">"1012"</span>,<span class="attr">"bookName"</span>:<span class="string">"Html开发"</span>,<span class="attr">"author"</span>:<span class="string">"曹操"</span>,<span class="attr">"price"</span>:<span class="literal">null</span>,<span class="attr">"press"</span>:<span class="literal">null</span>,<span class="attr">"kind"</span>:<span class="literal">null</span>,<span class="attr">"cnt"</span>:<span class="literal">null</span>&#125;,&#123;<span class="attr">"bookId"</span>:<span class="string">"1013"</span>,<span class="attr">"bookName"</span>:<span class="string">"旅游百科"</span>,<span class="attr">"author"</span>:<span class="string">"孙权"</span>,<span class="attr">"price"</span>:<span class="literal">null</span>,<span class="attr">"press"</span>:<span class="literal">null</span>,<span class="attr">"kind"</span>:<span class="literal">null</span>,<span class="attr">"cnt"</span>:<span class="literal">null</span>&#125;]</span><br></pre></td></tr></table></figure>
+<p>这时候我们可以在pojo类前添加注解@JsonInclude(value=JsonInclude.Include.NON_NULL)</p>
+<p>它可以去点返回值为空的json数据忽略</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[&#123;<span class="attr">"bookId"</span>:<span class="string">"1011"</span>,<span class="attr">"bookName"</span>:<span class="string">"java程序设计"</span>,<span class="attr">"author"</span>:<span class="string">"刘备"</span>&#125;,&#123;<span class="attr">"bookId"</span>:<span class="string">"1012"</span>,<span class="attr">"bookName"</span>:<span class="string">"Html开发"</span>,<span class="attr">"author"</span>:<span class="string">"曹操"</span>&#125;,&#123;<span class="attr">"bookId"</span>:<span class="string">"1013"</span>,<span class="attr">"bookName"</span>:<span class="string">"旅游百科"</span>,<span class="attr">"author"</span>:<span class="string">"孙权"</span>&#125;]</span><br></pre></td></tr></table></figure>
+<h5 id="添加位置"><a href="#添加位置" class="headerlink" title="添加位置"></a>添加位置</h5><figure class="image-box">
+                <a rel=springMVC json数据交互 href="http://chen.cypeng.cn/Spring%20json4.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/Spring%20json4.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-01-11T07:43:42.789Z" itemprop="dateUpdated">2019-01-11 15:43:42</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2019/01/11/springMVC-json数据交互/" target="_blank" rel="external">https://chenchenchenyue.github.io/2019/01/11/springMVC-json数据交互/</a>
+        
+    </div>
+    <footer>
+        <a href="https://chenchenchenyue.github.io">
+            <img src="/img/avatar.jpg" alt="Chen YuePeng">
+            Chen YuePeng
+        </a>
+    </footer>
+</blockquote>
+
+        
+            <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+            
+        
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Spring-mvc/">Spring mvc</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/json/">json</a></li></ul>
+
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2019/01/11/springMVC-json数据交互/&title=《springMVC json数据交互》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2019/01/11/springMVC-json数据交互/&title=《springMVC json数据交互》 — 陈越鹏&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="next">
+      <a href="/2019/01/10/跨域请求解决方案/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">跨域请求解决方案</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#spring-mvc与前端进行数据交互"><span class="post-toc-number">1.</span> <span class="post-toc-text">spring mvc与前端进行数据交互</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-最直接的方法-gson"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.最直接的方法 gson</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-通过注解-Responsebody返回json"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.通过注解@Responsebody返回json</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-ResponseBody-返回对象"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">2.1 @ResponseBody 返回对象</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2-ResponseBody返回一个字符串"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">2.2 @ResponseBody返回一个字符串</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-RequestBody将请求的json数据绑定到形参"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3.@RequestBody将请求的json数据绑定到形参</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-json返回值去掉null空值"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4.json返回值去掉null空值</span></a></li></ol></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+    <div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        我们一起来让这个世界有趣一点
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/reward-wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/reward-wechat.jpg" data-alipay="/img/reward-alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+    
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://github.com/chenchenchenyue" target="_blank">github</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Chen YuePeng &copy; 2017 - 2019
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2019/01/11/springMVC-json数据交互/&title=《springMVC json数据交互》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2019/01/11/springMVC-json数据交互/&title=《springMVC json数据交互》 — 陈越鹏&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACrUlEQVR42u3aQW4jMQwEwPz/09nrAl7b3aSUeIGakzGeSKoJYBIkv77i6/vh+vv+45ObFR6ff/3kgQsPDw9vffRnSz/ef9z43nFfn+fZ2fDw8PDu8ZLlZpjoEGUISc6Mh4eH9zm8/JlndxLkJhHHw8PD+zTenpp//uW4h4eHh/eSlxQj2nJtcj8vTFyvteDh4eFN6gDF0r/7+Up/Dw8PD2/dVU+aYZsWV5s016fFw8PDu8Br09lkpCB5HckIQp6Ov3kSDw8P7yivHbRqg0H7bdv0evOa8PDw8C7wZmXWfbFg1sralIDx8PDw7vHaBDoJEqdS9rwNhoeHh3ePt1m0Ha7aF3zbXfDw8PBu8PKNkwS3aEodDRJ19MPDw8Nb8GbZd3voWag4sAIeHh7eNd6sDZbwvkdXmzQ/PQkeHh7eNd4sMKw2XhSLi+IIHh4e3gXebLO8WLB5cW159w0SDw8P7xAvGQVoG1F5ojzrUhVr4uHh4V3j5Ysm6XJSVki+PVBWxsPDw7vGS35q2xbU2eZZfp5/jA7g4eHhHeXNhpk2xdl96lw3zPDw8PCO8pKSazuiOitVtAGjninDw8PD+0FenmonDa22MdY+89X+N/Dw8PAWvPag+9R5Vm5YzZTh4eHhrXmbn+x2mKAtB8+QUVKOh4eHt+YN38Gh4a0kSCTh6ulf4eHh4V3jbZr0Z4cJ8pGCaBc8PDy8H+TNUt5To1R5caEYusLDw8Nb8zbt/E1zaxZI6gCGh4eHd4GXX5vUeTN6lZR0VzA8PDy8EW+2dLv9bHQgLzq8mY/Aw8PDu8DbtPDb1zRrsyXFCDw8PLz/hbdphm2KHVHSj4eHh/dhvE3aPRurqoMKHh4e3jVemwq3r6YdKTg2/oWHh4d3gbf/gW5/uPPEevOy8PDw8C7w/gAJqLtgUoi8CwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/plugins/ios-orientationchange-fix.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/plugins/jquery.swipebox.min.js?v=1.3.2"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.3.2"></script>
+
+<!-- third-party -->
+<script type="text/javascript">
+;( function( $ ) {
+
+	$( '.swipebox' ).swipebox({
+		hideCloseButtonOnMobile: true
+	});
+
+} )( jQuery );
+</script>
+
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.3.2"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+    
+</body>
+</html>
