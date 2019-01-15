@@ -245,6 +245,11 @@
 <h2 id="4-json返回值去掉null空值"><a href="#4-json返回值去掉null空值" class="headerlink" title="4.json返回值去掉null空值"></a>4.json返回值去掉null空值</h2><h5 id="有时候我们只想查询pojo类中的一部分属性值，但是这时候将结果集对象转换成json，没有查询的属性值就对应成null"><a href="#有时候我们只想查询pojo类中的一部分属性值，但是这时候将结果集对象转换成json，没有查询的属性值就对应成null" class="headerlink" title="有时候我们只想查询pojo类中的一部分属性值，但是这时候将结果集对象转换成json，没有查询的属性值就对应成null"></a>有时候我们只想查询pojo类中的一部分属性值，但是这时候将结果集对象转换成json，没有查询的属性值就对应成null</h5><p>[{“bookId”:”1011”,”bookName”:”java程序设计”,”author”:”刘备”,”price”:null,”press”:null,”kind”:null,”cnt”:null},{“bookId”:”1012”,”bookName”:”Html开发”,”author”:”曹操”,”price”:null,”press”:null,”kind”:null,”cnt”:null},{“bookId”:”1013”,”bookName”:”旅游百科”,”author”:”孙权”,”price”:null,”press”:null,”kind”:null,”cnt”:null}]</p>
 <h5 id="这时候我们可以在pojo类前添加注解-JsonInclude-value-JsonInclude-Include-NON-NULL"><a href="#这时候我们可以在pojo类前添加注解-JsonInclude-value-JsonInclude-Include-NON-NULL" class="headerlink" title="这时候我们可以在pojo类前添加注解@JsonInclude(value=JsonInclude.Include.NON_NULL)"></a>这时候我们可以在pojo类前添加注解@JsonInclude(value=JsonInclude.Include.NON_NULL)</h5><h5 id="它可以去掉返回值为空的json数据忽略"><a href="#它可以去掉返回值为空的json数据忽略" class="headerlink" title="它可以去掉返回值为空的json数据忽略"></a>它可以去掉返回值为空的json数据忽略</h5><p>[{“bookId”:”1011”,”bookName”:”java程序设计”,”author”:”刘备”},{“bookId”:”1012”,”bookName”:”Html开发”,”author”:”曹操”},{“bookId”:”1013”,”bookName”:”旅游百科”,”author”:”孙权”}]</p>
 <h5 id="添加位置"><a href="#添加位置" class="headerlink" title="添加位置"></a>添加位置</h5><p><a rel=springMVC json数据交互 href="http://chen.cypeng.cn/Spring%20json4.png" class="swipebox" title=<img src="http://chen.cypeng.cn/Spring%20json4.png" alt="">><img src="http://chen.cypeng.cn/Spring%20json4.png" alt=""></a></p>
+<h4 id="5-json-返回前端Date类型数据变成毫秒数"><a href="#5-json-返回前端Date类型数据变成毫秒数" class="headerlink" title="5.json 返回前端Date类型数据变成毫秒数"></a>5.json 返回前端Date类型数据变成毫秒数</h4><p>在date数据类型的 get方法前加上注解@JsonFormat(pattern=”yyyy-MM-dd HH:mm:ss”,timezone = “GMT+8”)</p>
+<figure class="image-box">
+                <a rel=springMVC json数据交互 href="http://chen.cypeng.cn/Spring%20json5.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/Spring%20json5.png" alt="" title="" class=""></a>
+                <p></p>
+            </figure>
 
         </div>
         
@@ -252,7 +257,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2019-01-11T10:25:12.357Z" itemprop="dateUpdated">2019-01-11 18:25:12</time>
+    最后更新时间：<time datetime="2019-01-15T09:58:05.979Z" itemprop="dateUpdated">2019-01-15 17:58:05</time>
 </span><br>
 
 
@@ -321,7 +326,14 @@
         
     </div>
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2019/01/15/jquery使用append-追加元素事件失效/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">jquery使用append()追加元素事件失效</h4>
+      </a>
+    </div>
   
 
   
@@ -340,7 +352,7 @@
         <aside class="post-widget">
             <nav class="post-toc-wrap" id="post-toc">
                 <strong>目录</strong>
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#spring-mvc与前端进行数据交互"><span class="post-toc-number">1.</span> <span class="post-toc-text">spring mvc与前端进行数据交互</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-最直接的方法-gson"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.最直接的方法 gson</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-通过注解-Responsebody返回json"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.通过注解@Responsebody返回json</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-ResponseBody-返回对象"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">2.1 @ResponseBody 返回对象</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2-ResponseBody返回一个字符串"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">2.2 @ResponseBody返回一个字符串</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-RequestBody将请求的json数据绑定到形参"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3.@RequestBody将请求的json数据绑定到形参</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-json返回值去掉null空值"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4.json返回值去掉null空值</span></a></li></ol></li></ol>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#spring-mvc与前端进行数据交互"><span class="post-toc-number">1.</span> <span class="post-toc-text">spring mvc与前端进行数据交互</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-最直接的方法-gson"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.最直接的方法 gson</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-通过注解-Responsebody返回json"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.通过注解@Responsebody返回json</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-1-ResponseBody-返回对象"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">2.1 @ResponseBody 返回对象</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-2-ResponseBody返回一个字符串"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">2.2 @ResponseBody返回一个字符串</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-RequestBody将请求的json数据绑定到形参"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3.@RequestBody将请求的json数据绑定到形参</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#4-json返回值去掉null空值"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">4.json返回值去掉null空值</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#5-json-返回前端Date类型数据变成毫秒数"><span class="post-toc-number">1.4.0.1.</span> <span class="post-toc-text">5.json 返回前端Date类型数据变成毫秒数</span></a></li></ol></li></ol></li></ol></li></ol>
             </nav>
             <div class="toc-bar"><div>
         </aside>
