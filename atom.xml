@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://chenchenchenyue.github.io/"/>
-  <updated>2019-01-15T11:38:08.576Z</updated>
+  <updated>2019-12-01T16:01:05.530Z</updated>
   <id>https://chenchenchenyue.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flutter前后端通信坑点</title>
+    <link href="https://chenchenchenyue.github.io/2019/12/01/flutter%E5%89%8D%E5%90%8E%E7%AB%AF%E9%80%9A%E4%BF%A1%E5%9D%91%E7%82%B9/"/>
+    <id>https://chenchenchenyue.github.io/2019/12/01/flutter前后端通信坑点/</id>
+    <published>2019-12-01T15:22:56.000Z</published>
+    <updated>2019-12-01T16:01:05.530Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前后端通信遇到的错误总结"><a href="#前后端通信遇到的错误总结" class="headerlink" title="前后端通信遇到的错误总结"></a>前后端通信遇到的错误总结</h1><h2 id="1-我们通常返回的格式"><a href="#1-我们通常返回的格式" class="headerlink" title="1.我们通常返回的格式"></a>1.我们通常返回的格式</h2><figure class="image-box">                <img src="http://chen.cypeng.cn/2019121%E5%90%8E%E7%AB%AF%E8%BF%94%E5%9B%9E%E6%95%B0%E6%8D%AE.png" alt="" title="" class="">                <p></p>            </figure><p>如上图所示，是json字符串，在每一个属性名和属性值上都有双引号</p><h2 id="2-我们使用flutter，dio接收前端数据"><a href="#2-我们使用flutter，dio接收前端数据" class="headerlink" title="2.我们使用flutter，dio接收前端数据"></a>2.我们使用flutter，dio接收前端数据</h2><h3 id="2-1一条数据时"><a href="#2-1一条数据时" class="headerlink" title="2.1一条数据时"></a>2.1一条数据时</h3><figure class="image-box">                <img src="http://chen.cypeng.cn/2019121%E5%8D%95%E6%9D%A1%E6%95%B0%E6%8D%AE.png" alt="" title="" class="">                <p></p>            </figure><p>如图所示，response.data的数据没有双引号，但是其他类型直接输出有双引号，这时，有双引号的数据可直接通过json.decode解码成json对象，如list或者map。</p><h3 id="2-2多条数据时"><a href="#2-2多条数据时" class="headerlink" title="2.2多条数据时"></a>2.2多条数据时</h3><figure class="image-box">                <img src="http://chen.cypeng.cn/2019121%E5%A4%9A%E6%9D%A1%E6%95%B0%E6%8D%AE.png" alt="" title="" class="">                <p></p>            </figure><p>如图所示，几乎全是没有加引号的json字符串，但是此时仍是字符串，不能进行操作，而使用与单条数据一样的json.decode解码则会报错。如下图</p><figure class="image-box">                <img src="http://chen.cypeng.cn/2019121%E5%A4%9A%E6%9D%A1%E6%95%B0%E6%8D%AE%E5%8F%91%E7%94%9F%E9%94%99%E8%AF%AF.png" alt="" title="" class="">                <p></p>            </figure><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>虽然后端返回的json字符串仍然有双引号，但是flutter dio接收时，可能会没有，比如多条数据需要转为list时，这时候可以先使用json.encode先将json字符串加上双引号，然后再进行解码，如下图</p><figure class="image-box">                <img src="http://chen.cypeng.cn/2019121%E5%A4%9A%E6%9D%A1%E6%95%B0%E6%8D%AE.png" alt="" title="" class="">                <p></p>            </figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前后端通信遇到的错误总结&quot;&gt;&lt;a href=&quot;#前后端通信遇到的错误总结&quot; class=&quot;headerlink&quot; title=&quot;前后端通信遇到的错误总结&quot;&gt;&lt;/a&gt;前后端通信遇到的错误总结&lt;/h1&gt;&lt;h2 id=&quot;1-我们通常返回的格式&quot;&gt;&lt;a href=&quot;#1-
+      
+    
+    </summary>
+    
+      <category term="博客" scheme="https://chenchenchenyue.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="flutter" scheme="https://chenchenchenyue.github.io/tags/flutter/"/>
+    
+      <category term="dio" scheme="https://chenchenchenyue.github.io/tags/dio/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>pytorch深度学习第一次入门</title>
+    <link href="https://chenchenchenyue.github.io/2019/11/26/pytorch%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%85%A5%E9%97%A8/"/>
+    <id>https://chenchenchenyue.github.io/2019/11/26/pytorch深度学习第一次入门/</id>
+    <published>2019-11-26T12:22:25.000Z</published>
+    <updated>2019-11-27T02:00:29.015Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="pytorch第一次学习"><a href="#pytorch第一次学习" class="headerlink" title="pytorch第一次学习"></a>pytorch第一次学习</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;pytorch第一次学习&quot;&gt;&lt;a href=&quot;#pytorch第一次学习&quot; class=&quot;headerlink&quot; title=&quot;pytorch第一次学习&quot;&gt;&lt;/a&gt;pytorch第一次学习&lt;/h1&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="深度学习" scheme="https://chenchenchenyue.github.io/tags/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="pytorch" scheme="https://chenchenchenyue.github.io/tags/pytorch/"/>
+    
+  </entry>
   
   <entry>
     <title>jquery使用append()追加元素事件失效</title>
