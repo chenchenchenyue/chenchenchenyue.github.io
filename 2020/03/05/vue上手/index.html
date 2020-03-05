@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>vue上手 | 陈越鹏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="vue">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/third-party/swipebox.min.css?v=1.3.2">
+    <link rel="stylesheet" href="/css/style.css?v=1.3.2">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+    
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Chen YuePeng</h5>
+          <a href="mailto:1643544132@qq.com" title="1643544132@qq.com" class="mail">
+            
+              <span>1</span>
+            
+              <span>6</span>
+            
+              <span>4</span>
+            
+              <span>3</span>
+            
+              <span>5</span>
+            
+              <span>4</span>
+            
+              <span>4</span>
+            
+              <span>1</span>
+            
+              <span>3</span>
+            
+              <span>2</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/chenchenchenyue" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                HOME
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                CATEGORIES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                TAGS
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                ARCHIVES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-plus-square"></i>
+                CUSTOM
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>vue上手</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="https://source.unsplash.com/random/1712x400" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">vue上手</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-03-05T13:29:18.000Z" itemprop="datePublished" class="page-time">
+  2020-03-05
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-vue上手"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">vue上手</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-03-05 21:29:18" datetime="2020-03-05T13:29:18.000Z"  itemprop="datePublished">2020-03-05</time>
+
+            
+
+
+            
+
+            
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <h1 id="vue上手教程"><a href="#vue上手教程" class="headerlink" title="vue上手教程"></a>vue上手教程</h1><h2 id="src-assets下放静态文件-和-注意-相对路径常用-表示当前同级"><a href="#src-assets下放静态文件-和-注意-相对路径常用-表示当前同级" class="headerlink" title="src/assets下放静态文件   ./和../注意   相对路径常用./表示当前同级"></a>src/assets下放静态文件   ./和../注意   相对路径常用./表示当前同级</h2><p>vue中 methods中方法这样写    getdata:function(){}    可简写为getdata(){}</p>
+<h3 id="1-格式"><a href="#1-格式" class="headerlink" title="1.格式"></a>1.格式</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">var example2 = new Vue(&#123;</span><br><span class="line">  el: &apos;#example-2&apos;,</span><br><span class="line">  data: &#123;</span><br><span class="line">    name: &apos;Vue.js&apos;</span><br><span class="line">  &#125;,</span><br><span class="line">  // 在 `methods` 对象中定义方法</span><br><span class="line">  methods: &#123;</span><br><span class="line">    greet: function (event) &#123;</span><br><span class="line">      // `this` 在方法里指向当前 Vue 实例</span><br><span class="line">      alert(&apos;Hello &apos; + this.name + &apos;!&apos;)</span><br><span class="line">      // `event` 是原生 DOM 事件</span><br><span class="line">      if (event) &#123;</span><br><span class="line">        alert(event.target.tagName)</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>this.name在methods里能直接拿到数据，this表示当前实例，也可以this.data.name</p>
+<p>this.name=xxx  能对data内的属性值进行赋值，但是不能this.name[0]类似于这样对数组某一值赋值，可以通过，this.name.splice(起始位置，删除个数(为0，表示不删除，新增元素。。。))实现替换</p>
+<h3 id="2-computed计算属性"><a href="#2-computed计算属性" class="headerlink" title="2.computed计算属性"></a>2.computed计算属性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">computed: &#123;</span><br><span class="line">    // 计算属性的 getter</span><br><span class="line">    reversedMessage: function () &#123;</span><br><span class="line">      // `this` 指向 vm 实例</span><br><span class="line">      return this.message.split(&apos;&apos;).reverse().join(&apos;&apos;)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<p>与data和methods同级，reversedMessage就是属性值，引用时和data内属性同样方法，在页面内引用。</p>
+<h3 id="3-绑定"><a href="#3-绑定" class="headerlink" title="3.绑定"></a>3.绑定</h3><p>v-bind:     绑定属性   简写为:</p>
+<p>v-on:         绑定事件   简写为@</p>
+<h3 id="4-组件"><a href="#4-组件" class="headerlink" title="4.组件"></a>4.组件</h3><h4 id="这是全局注册组件"><a href="#这是全局注册组件" class="headerlink" title="这是全局注册组件"></a>这是全局注册组件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(&apos;button-counter&apos;, &#123;</span><br><span class="line">  data: function () &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      count: 0</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  template: &apos;&lt;button v-on:click=&quot;count++&quot;&gt;You clicked me &#123;&#123; count &#125;&#125; times.&lt;/button&gt;&apos;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="，’button-counter’是组件名，data注意和vue实例不一样，这里data对应的是个函数，-return值。template模板是引用时的显示内容"><a href="#，’button-counter’是组件名，data注意和vue实例不一样，这里data对应的是个函数，-return值。template模板是引用时的显示内容" class="headerlink" title="，’button-counter’是组件名，data注意和vue实例不一样，这里data对应的是个函数， return值。template模板是引用时的显示内容"></a>，’button-counter’是组件名，data注意和vue实例不一样，这里data对应的是个函数， return值。template模板是引用时的显示内容</h5><h5 id="引用时："><a href="#引用时：" class="headerlink" title="引用时："></a>引用时：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;components-demo&quot;&gt;</span><br><span class="line">  &lt;button-counter&gt;&lt;/button-counter&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">new Vue(&#123; el: &apos;#components-demo&apos; &#125;)</span><br></pre></td></tr></table></figure>
+<h4 id="这是局部注册组件"><a href="#这是局部注册组件" class="headerlink" title="这是局部注册组件"></a>这是局部注册组件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">var ComponentA = &#123; /* ... */ &#125;</span><br><span class="line">var ComponentB = &#123; /* ... */ &#125;</span><br><span class="line">var ComponentC = &#123; /* ... */ &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">new Vue(&#123;</span><br><span class="line">  el: &apos;#app&apos;,</span><br><span class="line">  components: &#123;</span><br><span class="line">    &apos;component-a&apos;: ComponentA,</span><br><span class="line">    &apos;component-b&apos;: ComponentB</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>注意<strong>局部注册的组件在其子组件中不可用</strong>。例如，如果你希望 <code>ComponentA</code> 在 <code>ComponentB</code> 中可用，则你需要这样写：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var ComponentA = &#123; /* ... */ &#125;</span><br><span class="line"></span><br><span class="line">var ComponentB = &#123;</span><br><span class="line">  components: &#123;</span><br><span class="line">    &apos;component-a&apos;: ComponentA</span><br><span class="line">  &#125;,</span><br><span class="line">  // ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="CLI脚手架内"><a href="#CLI脚手架内" class="headerlink" title="CLI脚手架内"></a>CLI脚手架内</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">import BaseButton from &apos;./BaseButton.vue&apos;</span><br><span class="line">import BaseIcon from &apos;./BaseIcon.vue&apos;</span><br><span class="line">import BaseInput from &apos;./BaseInput.vue&apos;</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  components: &#123;</span><br><span class="line">    BaseButton,</span><br><span class="line">    BaseIcon,</span><br><span class="line">    BaseInput</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//使用</span><br><span class="line">&lt;BaseInput</span><br><span class="line">  v-model=&quot;searchText&quot;</span><br><span class="line">  @keydown.enter=&quot;search&quot;</span><br><span class="line">/&gt;</span><br><span class="line">&lt;BaseButton @click=&quot;search&quot;&gt;</span><br><span class="line">  &lt;BaseIcon name=&quot;search&quot;/&gt;</span><br><span class="line">&lt;/BaseButton&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="3-vue-CLI脚手架-安装视频"><a href="#3-vue-CLI脚手架-安装视频" class="headerlink" title="3.vue CLI脚手架    安装视频"></a>3.vue CLI脚手架    <a href="https://learning.dcloud.io/#/?vid=14" target="_blank" rel="noopener">安装视频</a></h3><p>1.脚手架是通过webpack搭建的开发环境</p>
+<p>2.使用ES6语法</p>
+<p>3.打包和压缩JS为一个文件</p>
+<p>4.项目文件在编译环境中编辑，而不是浏览器</p>
+<p>5.实现页面自动刷新</p>
+<h4 id="新建项目-官方文件"><a href="#新建项目-官方文件" class="headerlink" title="新建项目   官方文件"></a>新建项目   <a href="https://cli.vuejs.org/guide/creating-a-project.html#vue-create" target="_blank" rel="noopener">官方文件</a></h4><h4 id="1-cmd里进入项目要放置的位置（D-Vue-projects），vue-create-secondproject-新版cli创建命令"><a href="#1-cmd里进入项目要放置的位置（D-Vue-projects），vue-create-secondproject-新版cli创建命令" class="headerlink" title="1. cmd里进入项目要放置的位置（D:\Vue_projects），vue create secondproject     新版cli创建命令"></a>1. cmd里进入项目要放置的位置（D:\Vue_projects），vue create secondproject     新版cli创建命令</h4><p>自定义安装时，空格选择或取消，Linter/Former不选，这个会强制编码格式，前期可以只选Babel</p>
+<h4 id="2-图像化安装-，cmd内输入vue-ui-进入图形化页面创建"><a href="#2-图像化安装-，cmd内输入vue-ui-进入图形化页面创建" class="headerlink" title="2.图像化安装 ，cmd内输入vue ui 进入图形化页面创建"></a>2.图像化安装 ，cmd内输入vue ui 进入图形化页面创建</h4><h4 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h4><h4 id="3-npm-run-server-运行项目"><a href="#3-npm-run-server-运行项目" class="headerlink" title="3.npm run server 运行项目"></a>3.npm run server 运行项目</h4><p>大致分三个部分</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;div id=&quot;app&quot;&gt;</span><br><span class="line">		&lt;Header /&gt;</span><br><span class="line">		&lt;img alt=&quot;Vue logo&quot; src=&quot;./assets/logo.png&quot;&gt;</span><br><span class="line">		&lt;HelloWorld msg=&quot;Welcome to Your Vue.js App&quot; /&gt;</span><br><span class="line">		&lt;h1&gt;App.vue&lt;/h1&gt;</span><br><span class="line">		&lt;Users :users=&apos;users&apos;&gt;&lt;/Users&gt;</span><br><span class="line">		</span><br><span class="line">		&lt;Footer /&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">	import HelloWorld from &apos;./components/HelloWorld.vue&apos;</span><br><span class="line">	import Users from &apos;./components/Users.vue&apos;</span><br><span class="line">	import Header from &apos;./components/Header.vue&apos;</span><br><span class="line">	import Footer from &apos;./components/Footer.vue&apos;</span><br><span class="line">	export default &#123;</span><br><span class="line">		name: &apos;app&apos;,</span><br><span class="line">		data() &#123;</span><br><span class="line">			return &#123;</span><br><span class="line">				users: [&#123;</span><br><span class="line">						name: &quot;陈越鹏&quot;,</span><br><span class="line">						wechat: &quot;16245335&quot;,</span><br><span class="line">						show: false</span><br><span class="line">					&#125;,</span><br><span class="line">					&#123;</span><br><span class="line">						name: &quot;陈越鹏&quot;,</span><br><span class="line">						wechat: &quot;16245335&quot;,</span><br><span class="line">						show: false</span><br><span class="line">					&#125;</span><br><span class="line">				]</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;,</span><br><span class="line">		components: &#123;</span><br><span class="line">			Users,</span><br><span class="line">			HelloWorld,</span><br><span class="line">			Header,</span><br><span class="line">			Footer,</span><br><span class="line">			</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">	#app &#123;</span><br><span class="line">		font-family: &apos;Avenir&apos;, Helvetica, Arial, sans-serif;</span><br><span class="line">		-webkit-font-smoothing: antialiased;</span><br><span class="line">		-moz-osx-font-smoothing: grayscale;</span><br><span class="line">		text-align: center;</span><br><span class="line">		color: #2c3e50;</span><br><span class="line">		margin-top: 60px;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	h1 &#123;</span><br><span class="line">		color: purple;</span><br><span class="line">	&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-结构目录"><a href="#3-结构目录" class="headerlink" title="3.结构目录"></a>3.结构目录</h4><figure class="image-box">
+                <a rel=vue上手 href="http://chen.cypeng.cn/20200211目录结构.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/20200211目录结构.png" alt="目录结构" title="" class=""></a>
+                <p>目录结构</p>
+            </figure>
+<p>pulic：打包之后用于部署生产环境的目录</p>
+<p>src：开发目录</p>
+<p>​     components：整个项目的组件目录,包含单文件组件</p>
+<p>​      App.vue:整个项目的入口文件，完成对组件的引入工作</p>
+<p>package.json：管理项目所需要的各种模块，以及版本号名称</p>
+<h3 id="4-语法"><a href="#4-语法" class="headerlink" title="4.语法"></a>4.语法</h3><h5 id="1-this-list-push-对数组添加对象"><a href="#1-this-list-push-对数组添加对象" class="headerlink" title="1.this.list.push(),对数组添加对象"></a>1.this.list.push(),对数组添加对象</h5><h5 id="2-lt-click-”ssss-event-”-data-aid-’xx’-gt"><a href="#2-lt-click-”ssss-event-”-data-aid-’xx’-gt" class="headerlink" title="2.   &lt;@click=”ssss($event)”    data-aid=’xx’&gt;"></a>2.   &lt;@click=”ssss($event)”    data-aid=’xx’&gt;</h5><p>​        e.srcElement表示dom节点</p>
+<p>​       ssss(e){</p>
+<p>​                 e.srcElement.style.background=”red”</p>
+<p>​                 e.srcElement.dataset.aid</p>
+<p>​             }</p>
+<h5 id="3-双向数据绑定"><a href="#3-双向数据绑定" class="headerlink" title="3.  双向数据绑定"></a>3.  双向数据绑定</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;example-5&quot;&gt;</span><br><span class="line">		&lt;select v-model=&quot;selected&quot;&gt;</span><br><span class="line">			&lt;option disabled value=&quot;&quot;&gt;请选择&lt;/option&gt;</span><br><span class="line">			&lt;option value=&quot;陈&quot;&gt;A&lt;/option&gt;</span><br><span class="line">			&lt;option value=&quot;月&quot;&gt;B&lt;/option&gt;</span><br><span class="line">			&lt;option value=&quot;有&quot;&gt;C&lt;/option&gt;</span><br><span class="line">		&lt;/select&gt;</span><br><span class="line">		&lt;span&gt;Selected: &#123;&#123; selected &#125;&#125;&lt;/span&gt;</span><br><span class="line">	&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>主要是v-model，表单几个元素都是这样，除了输入框(直接用v-model绑定)，通过value传值，v-model绑定值。</p>
+<h5 id="特殊："><a href="#特殊：" class="headerlink" title="特殊："></a>特殊：</h5><p>checkbox，分单个和多个。单个时候或者刻意不写value的时候，不需要写value，v-model绑定的是一个布尔值，true和false。多个的时候，需要写value，这时候v-model绑定的是数组，内部是选定的复选框对应的value集合</p>
+<h3 id="5-todolist-http-www-todolist-cn"><a href="#5-todolist-http-www-todolist-cn" class="headerlink" title="5.todolist      http://www.todolist.cn/"></a>5.todolist      <a href="http://www.todolist.cn/" target="_blank" rel="noopener">http://www.todolist.cn/</a></h3><h5 id="1-代码"><a href="#1-代码" class="headerlink" title="1.代码"></a>1.代码</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;input type=<span class="string">"text"</span> v-model=<span class="string">"todolist"</span> /&gt;<span class="xml"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"add"</span>&gt;</span>+增加<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">		&lt;br /&gt;</span><br><span class="line">		&lt;hr /&gt;</span><br><span class="line">		&lt;ul&gt;</span><br><span class="line">			&lt;li :key=<span class="string">"item.id"</span> v-<span class="keyword">for</span>=<span class="string">"(item,index) in list"</span>&gt;</span><br><span class="line">				&#123;&#123;item.item&#125;&#125;-----<span class="xml"><span class="tag">&lt;<span class="name">button</span> @<span class="attr">click</span>=<span class="string">"del(index)"</span>&gt;</span>删除<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span></span><br><span class="line">			&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">		&lt;/u</span>l&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">add() &#123;			<span class="keyword">this</span>.list.push(&#123;<span class="attr">id</span>:<span class="keyword">this</span>.idcount++,<span class="attr">item</span>:<span class="keyword">this</span>.todolist&#125;),</span><br><span class="line">				<span class="keyword">this</span>.todolist=<span class="string">''</span></span><br><span class="line">			&#125;,</span><br><span class="line">			del(index)&#123;</span><br><span class="line">				alert(<span class="keyword">this</span>.list[index].id)</span><br><span class="line">				<span class="keyword">this</span>.list.splice(index,<span class="number">1</span>)</span><br><span class="line">			&#125;</span><br></pre></td></tr></table></figure>
+<h5 id="坑坑坑："><a href="#坑坑坑：" class="headerlink" title="坑坑坑："></a>坑坑坑：</h5><h5 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h5><p>在vue中v-for中使用splice删除元素的坑。</p>
+<p>众所周知，我们使用v-for循环dom/组件，它有两个属性，item：当前循环的每一个元素，index：当前循环元素所对应的下标</p>
+<p>个人习惯，平时绑定key值的时候，都习惯采用如下写法，直接绑定下标。但是因为我们绑定key值采取的是index，我们这边删除元素会导致顺序错乱问题，并不会以我们期望的那样，点击第一条就会删除第一条。</p>
+<p>查看vue官网对于key的介绍，最终找到了问题。</p>
+<p>这里通俗的解释下：</p>
+<p>下标在这是个临时身份，它的默认位置不会变化，如果你里面的item项移动了，那么移动的数据对应到index上，所以你的index对应的那个项就不是你想要的那个项了</p>
+<p>所以本质上 :key=index 它们是同一个inedx 在不变化的前提下，一旦发生变化了，就不再是我们期望的那样了</p>
+<p>所以这也是官方不推荐使用:key=”index”的原因，如果业务发生变化，你的代码就出问题了<br>————————————————<br>版权声明：本文为CSDN博主「坏丶毛病」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/qq_43363884/article/details/102910256" target="_blank" rel="noopener">https://blog.csdn.net/qq_43363884/article/details/102910256</a></p>
+<h5 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h5><p>数组使用splice进行改换某一位置的数据</p>
+<h3 id="6-localStorage"><a href="#6-localStorage" class="headerlink" title="6.localStorage"></a>6.localStorage</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">localStorage.setItem(&quot;key&quot;, JSON.stringify(data));    </span><br><span class="line">localStorage.getItem(&quot;key&quot;);</span><br><span class="line">localStorage.removeItem(&quot;key&quot;);</span><br><span class="line">localStorage.clear();</span><br></pre></td></tr></table></figure>
+<p>localStorage封装：</p>
+<p>   src目录下新建model文件夹，文件夹下新建storage.js文</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> storage = &#123;</span><br><span class="line">	set(key, value) &#123;</span><br><span class="line">		localStorage.setItem(key, <span class="built_in">JSON</span>.stringify(value));</span><br><span class="line">	&#125;,</span><br><span class="line">	get(key) &#123;</span><br><span class="line">		<span class="keyword">return</span> localStorage.getItem(key);</span><br><span class="line">	&#125;,</span><br><span class="line">	remove(key) &#123;</span><br><span class="line">		localStorage.removeItem(key);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> storage</span><br></pre></td></tr></table></figure>
+<p> 引用     import storage from ‘./model/storage.js’</p>
+<p>​          storage.set(“ll”,’xxx’)</p>
+<h3 id="7-单文件组件"><a href="#7-单文件组件" class="headerlink" title="7.单文件组件"></a>7.单文件组件</h3><p>   所有内容都要在一个元素里，div</p>
+<h3 id="8-生命周期函数-生命周期钩子"><a href="#8-生命周期函数-生命周期钩子" class="headerlink" title="8.生命周期函数/生命周期钩子"></a>8.生命周期函数/生命周期钩子</h3><p>组件挂载以及组件更新组件销毁的时候触发的一系列方法  这些方法叫做生命周期函数  </p>
+<p>mounted 编译完成就会触发</p>
+<h3 id="9-请求数据"><a href="#9-请求数据" class="headerlink" title="9.请求数据"></a>9.请求数据</h3><p>项目中安装install时，在项目目录下，npm install xxx  –save</p>
+<p>注意加–save，将依赖到项目中</p>
+<p>一般安装模块步骤</p>
+<p>1.安装模块</p>
+<p>2.在main.js内挂载   import xx form xxxx</p>
+<p>3.使用 在main.js  Vue.use(xx)</p>
+<p>4.使用   </p>
+<p>axios请求数据</p>
+<p>1.安装npm install axios –save</p>
+<p>2.哪里使用在哪里引入，各个单文件组件  import Axios from “axios”</p>
+<p>3.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">Axios.get(<span class="string">'/user?ID=12345'</span>)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// handle success</span></span><br><span class="line">    <span class="built_in">console</span>.log(response);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="comment">// handle error</span></span><br><span class="line">    <span class="built_in">console</span>.log(error);</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// always executed</span></span><br><span class="line">  &#125;);</span><br><span class="line"></span><br><span class="line"><span class="comment">// Optionally the request above could also be done as</span></span><br><span class="line">Axios.get(<span class="string">'/user'</span>, &#123;</span><br><span class="line">    params: &#123;</span><br><span class="line">      ID: <span class="number">12345</span></span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params">response</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(response);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(<span class="function"><span class="keyword">function</span> (<span class="params">error</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(error);</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="comment">// always executed</span></span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Axios.post(&apos;/user&apos;, &#123;</span><br><span class="line">    firstName: &apos;Fred&apos;,</span><br><span class="line">    lastName: &apos;Flintstone&apos;</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(function (response) &#123;</span><br><span class="line">    console.log(response);</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch(function (error) &#123;</span><br><span class="line">    console.log(error);</span><br><span class="line">  &#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="10-组件传值"><a href="#10-组件传值" class="headerlink" title="10.组件传值"></a>10.组件传值</h3><h5 id="1-父子组件传值"><a href="#1-父子组件传值" class="headerlink" title="1.父子组件传值"></a>1.父子组件传值</h5><p>​        父传子 ：     在子组件内data同级加上 props:[“title”]   ,这时在子组件内能直接使用title的值。不过title的值由父组件传递。在父组件内引用子组件时   &lt;子 :title=”sssss”&gt;&lt;/子&gt;    sssss就是父组件给子组件传递的值，也可以传递方法，传递方法时只用传递方法名，比如  &lt;子 :title=”sssss”  :run=”ss”&gt;&lt;/子&gt;   ss为父组件方法名，还可以把整个实例传递给子组件 ，在子组件内通过 this.run()调用</p>
+<p>​        父组件主动获取子组件里的数据和方法   ：</p>
+<p>​                                              1.调用子组件的时候定义一个ref</p>
+<p>​                                                                 &lt;子 ref=”header”&gt;&lt;/子&gt;</p>
+<p>​                                               2.在父组件里面通过</p>
+<p>​                                                                  this.$refs.header.属性或者方法</p>
+<p>​                                                                  this.$refs.header.name</p>
+<p>​                                                                  this.$refs.header.getdata()</p>
+<p>​        子组件主动获取父组件里的数据和方法   ：</p>
+<p>​                                                                  this.$parent.属性或者方法</p>
+<p>​                                                                  this.$parent.name</p>
+<p>​                                                                  this.$parent.getdata()</p>
+<h5 id="2-非父子组件之间传值"><a href="#2-非父子组件之间传值" class="headerlink" title="2.非父子组件之间传值"></a>2.非父子组件之间传值</h5><p>​      </p>
+<h3 id="11-vue-router-参考链接或者哔哩哔哩大地视频-参考链接"><a href="#11-vue-router-参考链接或者哔哩哔哩大地视频-参考链接" class="headerlink" title="11.vue-router    参考链接或者哔哩哔哩大地视频 参考链接"></a>11.vue-router    <a href="https://www.cnblogs.com/wyt007/p/10422316.html" target="_blank" rel="noopener">参考链接</a>或者哔哩哔哩大地视频 <a href="https://www.cnblogs.com/wisewrong/p/6277262.html" target="_blank" rel="noopener">参考链接</a></h3><h5 id="1-引用-在main-js内"><a href="#1-引用-在main-js内" class="headerlink" title="1.引用   在main.js内"></a>1.引用   在main.js内</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">'vue-router'</span></span><br><span class="line"></span><br><span class="line">Vue.use(VueRouter)</span><br></pre></td></tr></table></figure>
+<h5 id="2-定义路由-main-js"><a href="#2-定义路由-main-js" class="headerlink" title="2.定义路由   main.js"></a>2.定义路由   main.js</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/foo'</span>, <span class="attr">component</span>: Foo &#125;,</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/bar'</span>, <span class="attr">component</span>: Bar &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h5 id="3-实例化vue-router-main-js"><a href="#3-实例化vue-router-main-js" class="headerlink" title="3.实例化vue-router main.js"></a>3.实例化vue-router main.js</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  routes <span class="comment">// (缩写) 相当于 routes: routes</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h5 id="5-挂载-main-js"><a href="#5-挂载-main-js" class="headerlink" title="5.挂载   main.js"></a>5.挂载   main.js</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">new Vue(&#123;</span><br><span class="line">  el: &apos;#app&apos;,</span><br><span class="line">  router,</span><br><span class="line">  render: h =&gt; h(App)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Vue <span class="keyword">from</span> <span class="string">'vue'</span></span><br><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'./App.vue'</span></span><br><span class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">'vue-router'</span></span><br><span class="line"><span class="keyword">import</span> Footer <span class="keyword">from</span> <span class="string">"./components/Foot.vue"</span></span><br><span class="line"><span class="keyword">import</span> Users <span class="keyword">from</span> <span class="string">"./components/Us.vue"</span></span><br><span class="line">Vue.use(VueRouter)</span><br><span class="line">Vue.config.productionTip = <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  <span class="comment">// &#123; path: '/', component: Footer &#125;,</span></span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/foo'</span>, <span class="attr">component</span>: Footer &#125;,</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/user'</span>, <span class="attr">component</span>: Users &#125;</span><br><span class="line">]</span><br><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  routes, <span class="comment">// (缩写) 相当于 routes: routes</span></span><br><span class="line">  mode: <span class="string">'history'</span>,   </span><br><span class="line">  <span class="comment">// 在创建的 router 对象中，如果不配置 mode，就会使用默认的 hash 模式，该模式下会将路径格式化为 #! 开头。</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 添加 mode: 'history' 之后将使用 HTML5 history 模式，该模式下没有 # 前缀，而且可以使用 pushState 和 replaceState 来管理记录。</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 关于 HTML5 history 模式的更多内容，可以参考官方文档：https://router.vuejs.org/zh-cn/essentials/history-mode.html</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">	router,</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App),</span><br><span class="line">&#125;).$mount(<span class="string">'#app'</span>)</span><br></pre></td></tr></table></figure>
+<h5 id="6-总结：路由模块化"><a href="#6-总结：路由模块化" class="headerlink" title="6.总结：路由模块化"></a>6.总结：路由模块化</h5><p>components同级目录下创建router文件夹，并创建router.js</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> VueRouter <span class="keyword">from</span> <span class="string">'vue-router'</span></span><br><span class="line"><span class="keyword">import</span> Footer <span class="keyword">from</span> <span class="string">"../components/Foot.vue"</span></span><br><span class="line"><span class="keyword">import</span> Users <span class="keyword">from</span> <span class="string">"../components/Us.vue"</span></span><br><span class="line">Vue.use(VueRouter)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> routes = [</span><br><span class="line">  <span class="comment">// &#123; path: '/', component: Footer &#125;,</span></span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/foo'</span>, <span class="attr">component</span>: Footer &#125;,</span><br><span class="line">  &#123; <span class="attr">path</span>: <span class="string">'/user'</span>, <span class="attr">component</span>: Users &#125;</span><br><span class="line">]</span><br><span class="line"><span class="keyword">const</span> router = <span class="keyword">new</span> VueRouter(&#123;</span><br><span class="line">  routes, <span class="comment">// (缩写) 相当于 routes: routes</span></span><br><span class="line">  mode: <span class="string">'history'</span>,   </span><br><span class="line">  <span class="comment">// 在创建的 router 对象中，如果不配置 mode，就会使用默认的 hash 模式，该模式下会将路径格式化为 #! 开头。</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 添加 mode: 'history' 之后将使用 HTML5 history 模式，该模式下没有 # 前缀，而且可以使用 pushState 和 replaceState 来管理记录。</span></span><br><span class="line">  </span><br><span class="line">  <span class="comment">// 关于 HTML5 history 模式的更多内容，可以参考官方文档：https://router.vuejs.org/zh-cn/essentials/history-mode.html</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> router  <span class="comment">//暴露路由</span></span><br></pre></td></tr></table></figure>
+<p>多了最后一句代码，暴露出来router</p>
+<h5 id="在main-js使用"><a href="#在main-js使用" class="headerlink" title="在main.js使用"></a>在main.js使用</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> router <span class="keyword">from</span> <span class="string">'./router/router.js'</span></span><br><span class="line"><span class="keyword">new</span> Vue(&#123;</span><br><span class="line">	router,</span><br><span class="line">  render: <span class="function"><span class="params">h</span> =&gt;</span> h(App),</span><br><span class="line">&#125;).$mount(<span class="string">'#app'</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">使用history模式，在nginx内要加上</span><br><span class="line"><span class="attribute">location</span> / &#123;</span><br><span class="line">  <span class="attribute">try_files</span> <span class="variable">$uri</span> <span class="variable">$uri</span>/ /index.html;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用history模式，在nginx内要加上</p>
+<h5 id="7-介绍"><a href="#7-介绍" class="headerlink" title="7.介绍"></a>7.介绍</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">router-view</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span>   动态加载的组件放在哪里，匹配到的组件放置的位置</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123; <span class="attr">path</span>: <span class="string">'*'</span>, <span class="attr">redirect</span>: <span class="string">'/b'</span> &#125;  重定向，  *代表没有匹配到</span><br></pre></td></tr></table></figure>
+<p>路由不一定设置，没有设置，默认从App.vue进入</p>
+<h3 id="12-动态路由-GET传值"><a href="#12-动态路由-GET传值" class="headerlink" title="12.动态路由 GET传值"></a>12.动态路由 GET传值</h3><p>如小总结内所示，动态路由 页面内使用时，this.$route.params.name获取</p>
+<p>get传值  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;router-link to=&quot;/detail?id=xxx&quot;&gt;跳转&lt;/router-link&gt; </span><br><span class="line"> &#123; path: &apos;/detail&apos;, component: User &#125;    //不一样</span><br><span class="line"> this.$route.query.name获取    //不一样</span><br></pre></td></tr></table></figure>
+<h3 id="13-路由嵌套"><a href="#13-路由嵌套" class="headerlink" title="13.路由嵌套"></a>13.路由嵌套</h3><p>​    route-view的显示内容，是根据当前url匹配route内定义的路由，匹配到则显示。注意看是第一层还是嵌套的第二层内显示。比如第一级，则在App.vue的route-view内显示匹配到的component。第二级，则在匹配到第二级的父组件(即第一级的component)里的route-view显示component</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">routes: [</span><br><span class="line">    &#123; <span class="attr">path</span>: <span class="string">'/user/:id'</span>, <span class="attr">component</span>: User,</span><br><span class="line">      children: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="comment">// 当 /user/:id/profile 匹配成功，</span></span><br><span class="line">          <span class="comment">// UserProfile 会被渲染在 User 的 &lt;router-view&gt; 中</span></span><br><span class="line">          path: <span class="string">'profile'</span>,</span><br><span class="line">          component: UserProfile</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="comment">// 当 /user/:id/posts 匹配成功</span></span><br><span class="line">          <span class="comment">// UserPosts 会被渲染在 User 的 &lt;router-view&gt; 中</span></span><br><span class="line">          path: <span class="string">'posts'</span>,</span><br><span class="line">          component: UserPosts</span><br><span class="line">        &#125;</span><br><span class="line">      ]</span><br><span class="line">    &#125;</span><br><span class="line">  ]</span><br></pre></td></tr></table></figure>
+<p>注意children里的path前面不写  /  符号</p>
+<h3 id="14-element-UI"><a href="#14-element-UI" class="headerlink" title="14.element UI"></a>14.element UI</h3><h5 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h5><p> npm i element-ui -S      -S表示意思和–save一样</p>
+<h5 id="引入-在main-js下"><a href="#引入-在main-js下" class="headerlink" title="引入  在main.js下"></a>引入  在main.js下</h5><p>import ElementUI from ‘element-ui’;<br>import ‘element-ui/lib/theme-chalk/index.css’;</p>
+<p>Vue.use(ElementUI);</p>
+<h3 id="15-vuex"><a href="#15-vuex" class="headerlink" title="15.vuex"></a>15.vuex</h3><p>vuex：专为vue.js应用程序开发的状态管理模式</p>
+<p>解决不同组件的数据共享，数据持久化（特别是非父子）小项目尽量不要用，大地老师无人点餐，无人收银系统去学习这个概念</p>
+<h1 id="小总结"><a href="#小总结" class="headerlink" title="小总结"></a>小总结</h1><h2 id="1-vue-ref的应用，可以获取dom节点，并操作"><a href="#1-vue-ref的应用，可以获取dom节点，并操作" class="headerlink" title="1. vue ref的应用，可以获取dom节点，并操作"></a>1. vue ref的应用，可以获取dom节点，并操作</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">	     &lt;p ref=&apos;p&apos;&gt;我是测试段落2&lt;/p&gt;</span><br><span class="line">			&lt;input type=&quot;text&quot; ref=&quot;input&quot;/&gt;</span><br><span class="line">			&lt;button @click=&quot;foucs&quot;&gt;click me  输入框获得焦点&lt;/button&gt;</span><br><span class="line">组件内方法</span><br><span class="line">				methods:&#123;</span><br><span class="line">					foucs()&#123;</span><br><span class="line">						this.$refs.input.focus();//获取焦点</span><br><span class="line">						this.$refs.p.style.color=&apos;red&apos;;</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">————————————————</span><br><span class="line">版权声明：本文为CSDN博主「皮的狠」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。</span><br><span class="line">原文链接：https://blog.csdn.net/qq_41709082/article/details/84717330</span><br></pre></td></tr></table></figure>
+<p>在Vue2.x中，ref是被用来给元素或子组件注册引用信息的。如果在普通的DOM元素上使用，ref指向的就是DOM元素；如果用在子组件上，ref就指向组件实例。   用在子组件上的大标签上，可以父组件调用子组件数据和方法</p>
+<h2 id="2-1"><a href="#2-1" class="headerlink" title="2."></a>2.</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">router.push(&#123; path: `/user/$&#123;userId&#125;` &#125;)     和  &lt;router-link :to=&quot;&apos;/detail/&apos;+id&quot;&gt;跳转&lt;/router-link&gt;  (id是参数值)      :::::::::::::</span><br><span class="line">   接收参数  const router = new VueRouter(&#123;</span><br><span class="line">  routes: [</span><br><span class="line">    // 动态路径参数 以冒号开头</span><br><span class="line">    &#123; path: &apos;/user/:id&apos;, component: User &#125;</span><br><span class="line">  ]</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="3-route-link绑定事件无效"><a href="#3-route-link绑定事件无效" class="headerlink" title="3.route-link绑定事件无效"></a>3.route-link绑定事件无效</h3><p>在vue中绑定事件是一下这种方法：</p>
+<p>v-on:click=’函数名称’;</p>
+<p>@click = ‘函数名称’;</p>
+<p>这两种写法都是正常。</p>
+<p>但是我们使用了 vue-router 路由时会使用 router-link&gt;标签来代替 a 标签跳转。我们在 vue-router 标签绑定 @click 事件 。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">`&lt;router-link to=`</span><span class="string">`"/date"`</span> <span class="string">`@click=`</span><span class="string">`"nav_click"`</span><span class="string">`&gt;最新&lt;/router-link&gt;`</span> <span class="string">`methods: &#123;`</span><span class="string">` `</span><span class="string">`nav_click: `</span><span class="string">`function`</span><span class="string">`() &#123;`</span><span class="string">`       `</span><span class="string">`console.log(1)`</span><span class="string">` `</span><span class="string">`&#125;`</span><span class="string">`&#125;`</span></span><br></pre></td></tr></table></figure>
+<p>却发现函数并没有执行。这是怎么回事。。。　　</p>
+<p>加 .native 修饰符就可以执行事件了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">`&lt;router-link to=``&quot;/date&quot;` `@click.native=``&quot;nav_click&quot;``&gt;最新&lt;/router-link&gt;` `methods: &#123;`` ``nav_click: ``function``() &#123;``       ``console.log(1)`` ``&#125;``&#125;　　`</span><br></pre></td></tr></table></figure>
+<p>解释：</p>
+<p>1： 因为它是自定义标签，根本就没有事件和方法，所以不触发，加个native 就是告诉vue 这个标签现在有主了 它是H5标签 可以加事件了。</p>
+<p>2：父组件要想在子组件监听自己的click事件就得加native，router-link是标签啊。哪里有父组件？？？？ </p>
+<p> 群里大佬一句说明了原因 router-link  其实就是一个封装好的 .vue 组件，所以需要 加.native修饰符才能绑定事件</p>
+<h3 id="4-修改element-ui里的样式"><a href="#4-修改element-ui里的样式" class="headerlink" title="4.修改element ui里的样式"></a>4.修改element ui里的样式</h3><p>比如table表格</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;style &gt;</span><br><span class="line">	.tablecontent &#123;</span><br><span class="line"></span><br><span class="line">		width: 80%;</span><br><span class="line">		margin: 0 auto;</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line">	.tablecontent th&#123;       //tablecontent为表格类名，th对应的是elementui的el-table-column</span><br><span class="line">		color: red;                    //不要按elementui给的标签定义，对比到html标签再修饰</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="5-前端接收含-n换行的文本展示。"><a href="#5-前端接收含-n换行的文本展示。" class="headerlink" title="5.前端接收含\n换行的文本展示。"></a>5.前端接收含\n换行的文本展示。</h3><p>​      white-space:pre-wrap;</p>
+<p>style内加入这行代码</p>
+<h3 id="6-读取文件"><a href="#6-读取文件" class="headerlink" title="6.读取文件"></a>6.读取文件</h3><p>const reader = new FileReader()<br>​        // 文件内容载入完毕之后的回调。<br>​        reader.onload = function(e) {<br>​          console.log(e.target.result)<br>​        }<br>​        reader.readAsText(selectedFile)<br>————————————————<br>版权声明：本文为CSDN博主「SilenceJude」的原创文章，遵循 CC 4.0 BY-SA 版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/SilenceJude/article/details/97002176" target="_blank" rel="noopener">https://blog.csdn.net/SilenceJude/article/details/97002176</a></p>
+
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-03-05T13:44:44.183Z" itemprop="dateUpdated">2020-03-05 21:44:44</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2020/03/05/vue上手/" target="_blank" rel="external">https://chenchenchenyue.github.io/2020/03/05/vue上手/</a>
+        
+    </div>
+    <footer>
+        <a href="https://chenchenchenyue.github.io">
+            <img src="/img/avatar.jpg" alt="Chen YuePeng">
+            Chen YuePeng
+        </a>
+    </footer>
+</blockquote>
+
+        
+            <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+            
+        
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/vue/">vue</a></li></ul>
+
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/03/05/vue上手/&title=《vue上手》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/03/05/vue上手/&title=《vue上手》 — 陈越鹏&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2020/03/05/vue中echarts的使用/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">vue中echarts的使用</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="next">
+      <a href="/2020/03/05/Python爬虫/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Python爬虫</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vue上手教程"><span class="post-toc-number">1.</span> <span class="post-toc-text">vue上手教程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#src-assets下放静态文件-和-注意-相对路径常用-表示当前同级"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">src/assets下放静态文件   ./和../注意   相对路径常用./表示当前同级</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-格式"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">1.格式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-computed计算属性"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">2.computed计算属性</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-绑定"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">3.绑定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-组件"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">4.组件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#这是全局注册组件"><span class="post-toc-number">1.1.4.1.</span> <span class="post-toc-text">这是全局注册组件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#这是局部注册组件"><span class="post-toc-number">1.1.4.2.</span> <span class="post-toc-text">这是局部注册组件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CLI脚手架内"><span class="post-toc-number">1.1.4.3.</span> <span class="post-toc-text">CLI脚手架内</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-vue-CLI脚手架-安装视频"><span class="post-toc-number">1.1.5.</span> <span class="post-toc-text">3.vue CLI脚手架    安装视频</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#新建项目-官方文件"><span class="post-toc-number">1.1.5.1.</span> <span class="post-toc-text">新建项目   官方文件</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#1-cmd里进入项目要放置的位置（D-Vue-projects），vue-create-secondproject-新版cli创建命令"><span class="post-toc-number">1.1.5.2.</span> <span class="post-toc-text">1. cmd里进入项目要放置的位置（D:\Vue_projects），vue create secondproject     新版cli创建命令</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-图像化安装-，cmd内输入vue-ui-进入图形化页面创建"><span class="post-toc-number">1.1.5.3.</span> <span class="post-toc-text">2.图像化安装 ，cmd内输入vue ui 进入图形化页面创建</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#示例"><span class="post-toc-number">1.1.5.4.</span> <span class="post-toc-text">示例</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-npm-run-server-运行项目"><span class="post-toc-number">1.1.5.5.</span> <span class="post-toc-text">3.npm run server 运行项目</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-结构目录"><span class="post-toc-number">1.1.5.6.</span> <span class="post-toc-text">3.结构目录</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-语法"><span class="post-toc-number">1.1.6.</span> <span class="post-toc-text">4.语法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-todolist-http-www-todolist-cn"><span class="post-toc-number">1.1.7.</span> <span class="post-toc-text">5.todolist      http://www.todolist.cn/</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-localStorage"><span class="post-toc-number">1.1.8.</span> <span class="post-toc-text">6.localStorage</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#7-单文件组件"><span class="post-toc-number">1.1.9.</span> <span class="post-toc-text">7.单文件组件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#8-生命周期函数-生命周期钩子"><span class="post-toc-number">1.1.10.</span> <span class="post-toc-text">8.生命周期函数/生命周期钩子</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#9-请求数据"><span class="post-toc-number">1.1.11.</span> <span class="post-toc-text">9.请求数据</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#10-组件传值"><span class="post-toc-number">1.1.12.</span> <span class="post-toc-text">10.组件传值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#11-vue-router-参考链接或者哔哩哔哩大地视频-参考链接"><span class="post-toc-number">1.1.13.</span> <span class="post-toc-text">11.vue-router    参考链接或者哔哩哔哩大地视频 参考链接</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#12-动态路由-GET传值"><span class="post-toc-number">1.1.14.</span> <span class="post-toc-text">12.动态路由 GET传值</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#13-路由嵌套"><span class="post-toc-number">1.1.15.</span> <span class="post-toc-text">13.路由嵌套</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#14-element-UI"><span class="post-toc-number">1.1.16.</span> <span class="post-toc-text">14.element UI</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#15-vuex"><span class="post-toc-number">1.1.17.</span> <span class="post-toc-text">15.vuex</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#小总结"><span class="post-toc-number">2.</span> <span class="post-toc-text">小总结</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-vue-ref的应用，可以获取dom节点，并操作"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">1. vue ref的应用，可以获取dom节点，并操作</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-1"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2.</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-route-link绑定事件无效"><span class="post-toc-number">2.2.1.</span> <span class="post-toc-text">3.route-link绑定事件无效</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#4-修改element-ui里的样式"><span class="post-toc-number">2.2.2.</span> <span class="post-toc-text">4.修改element ui里的样式</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#5-前端接收含-n换行的文本展示。"><span class="post-toc-number">2.2.3.</span> <span class="post-toc-text">5.前端接收含\n换行的文本展示。</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#6-读取文件"><span class="post-toc-number">2.2.4.</span> <span class="post-toc-text">6.读取文件</span></a></li></ol></li></ol></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+    <div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        我们一起来让这个世界有趣一点
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/reward-wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/reward-wechat.jpg" data-alipay="/img/reward-alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+    
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://github.com/chenchenchenyue" target="_blank">github</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Chen YuePeng &copy; 2017 - 2020
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/03/05/vue上手/&title=《vue上手》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/03/05/vue上手/&title=《vue上手》 — 陈越鹏&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJElEQVR42u3aS47CMBAFQO5/aUZCswPC626CwK6sEArE5YXTv8slvq636/7z8TfJ9ez+yxkXBgbGzzLyx9zffx47XxsGBsY+jHwpx8j8HxJk8s8YGBgY1QMxX0qyKRgYGBi94zIJK6shIwYGBkbCqJbDCg+I0+AP5eIYGBg/yJg0Bs7+/KH+BgYGxhczrq3r+Ih811MK68HAwFiakS+lWoxLmgfVDXqxQgwMjEUZkyGtanEt+W01VX763sDAwFiOkR9/+VIm7clkmx4EhRgYGBszqmFfdSPyRb8IDTEwMBZl5IFg75DNwTkjKrdhYGAszegVwibHd3XUDAMDYzdGr1iW35OHlb3kFgMDYwdGtUCWtxjztLbXwnywKgwMjKUZvUnRSauyt5Q86cXAwFiPUW1eVg/rhJGX5168NzAwMJZj5IBJi3G0x0H7EwMDY21GbzwrSXSrB3Ev6MTAwNiN0Rvk6iWr1YZBVGjDwMBYmpGPR+TDGb2UuBpQFjJyDAyMH2fMH9nrReQDZ9GqMDAwNmDkIWACyIPCt20lBgbG0oy8+D5pSeZpajU/xcDAWJtxLV6TotsZhbb/bzAwMJZm9CKuPHA8+1cYGBj7MM44ZCcDXknIiIGBsSdjfshOBsXmTU0MDAyM5ODLWwjVVmUExsDAwKgOkgYjF3n62mxeYmBgLMeoFut79x9vSnMgDAMDYwPG5FCehHrzsPJt7xYMDIzvZfwB9O6TYaOlHEAAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/plugins/ios-orientationchange-fix.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/plugins/jquery.swipebox.min.js?v=1.3.2"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.3.2"></script>
+
+<!-- third-party -->
+<script type="text/javascript">
+;( function( $ ) {
+
+	$( '.swipebox' ).swipebox({
+		hideCloseButtonOnMobile: true
+	});
+
+} )( jQuery );
+</script>
+
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.3.2"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+    
+</body>
+</html>

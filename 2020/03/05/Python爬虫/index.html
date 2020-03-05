@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    
+    <title>Python爬虫 | 陈越鹏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="python">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="/css/third-party/swipebox.min.css?v=1.3.2">
+    <link rel="stylesheet" href="/css/style.css?v=1.3.2">
+    
+    <script type="text/javascript">
+        // Data Center
+        var DC = {
+            reward:	true,
+            lv: JSON.parse('{"enable":false,"app_id":null,"app_key":null,"icon":true}'),
+            v: JSON.parse('{"enable":false,"appid":null,"appkey":null,"notify":true,"verify":true,"placeholder":"give me some sugers plz...","avatar":"wavatar"}'),
+            g: JSON.parse('{"enable":false,"lazy":true,"owner":"codefine","repo":"gitment","oauth":{"client_id":null,"client_secret":null},"perPage":10}'),
+            d: JSON.parse('{"app_id":null}')
+        };
+    </script>
+    <script type="text/javascript">
+        window.lazyScripts=[];
+    </script>
+    
+</head>
+
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap">
+      
+      <img src="/img/brand.jpg" class="brand-bg">
+      
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Chen YuePeng</h5>
+          <a href="mailto:1643544132@qq.com" title="1643544132@qq.com" class="mail">
+            
+              <span>1</span>
+            
+              <span>6</span>
+            
+              <span>4</span>
+            
+              <span>3</span>
+            
+              <span>5</span>
+            
+              <span>4</span>
+            
+              <span>4</span>
+            
+              <span>1</span>
+            
+              <span>3</span>
+            
+              <span>2</span>
+            
+              <span>@</span>
+            
+              <span>q</span>
+            
+              <span>q</span>
+            
+              <span>.</span>
+            
+              <span>c</span>
+            
+              <span>o</span>
+            
+              <span>m</span>
+            
+          </a>
+        </hgroup>
+        
+        <ul class="menu-link">
+          
+              <li>
+                <a href="https://github.com/chenchenchenyue" target="_blank">
+                  <i class="icon icon-lg icon-github"></i>
+                </a>
+              </li>
+            
+        </ul>
+        
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                HOME
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                CATEGORIES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                TAGS
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                ARCHIVES
+              </a>
+            </li>
+        
+            <li class="">
+              <a href="/custom"  >
+                <i class="icon icon-lg icon-plus-square"></i>
+                CUSTOM
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row clearfix">
+        <a href="javascript:;" class="header-icon pull-left waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">
+            <span>Python爬虫</span>
+            
+        </div>
+        
+        <a href="javascript:;" id="site_search_btn" class="header-icon pull-right waves-effect waves-circle waves-light">
+            <i class="icon icon-lg icon-search"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+    <img src="https://source.unsplash.com/random/1712x400" class="header-bg">
+    <div class="container fade-scale">
+        <h1 class="title">Python爬虫</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-03-05T13:28:41.000Z" itemprop="datePublished" class="page-time">
+  2020-03-05
+</time>
+
+
+            
+        </h5>
+        
+    </div>
+    
+
+</header>
+
+<div id="site_search">
+    <div class="search-title clearfix">
+        <span class="pull-left">
+          <i class="icon icon-lg icon-search"></i>
+        </span>
+        <input type="text" id="local-search-input" name="q" results="0" placeholder="search my blog..." class="form-control pull-left"/>
+        <a href="javascript:;" class="close pull-right waves-effect waves-circle waves-light">
+          <i class="icon icon-lg icon-close"></i>
+        </a>
+    </div>
+    <div id="local-search-result"></div>
+</div>
+
+
+<div class="container body-wrap">
+    <article id="post-Python爬虫"
+  class="post-article article-type-post" itemprop="blogPost">
+    <div class="post-card">
+        <h1 class="post-card-title">Python爬虫</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-03-05 21:28:41" datetime="2020-03-05T13:28:41.000Z"  itemprop="datePublished">2020-03-05</time>
+
+            
+
+
+            
+
+            
+
+
+            
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            
+            <h1 id="Python爬虫"><a href="#Python爬虫" class="headerlink" title="Python爬虫"></a>Python爬虫</h1><h2 id="一、Python爬虫快速入门"><a href="#一、Python爬虫快速入门" class="headerlink" title="一、Python爬虫快速入门"></a>一、Python爬虫快速入门</h2><h3 id="1-什么是爬虫"><a href="#1-什么是爬虫" class="headerlink" title="1.什么是爬虫"></a>1.什么是爬虫</h3><h4 id="网络爬虫：模拟浏览器访问和获取互联网信息的一个程序"><a href="#网络爬虫：模拟浏览器访问和获取互联网信息的一个程序" class="headerlink" title="网络爬虫：模拟浏览器访问和获取互联网信息的一个程序"></a>网络爬虫：模拟浏览器访问和获取互联网信息的一个程序</h4><h3 id="2-爬虫分类"><a href="#2-爬虫分类" class="headerlink" title="2.爬虫分类"></a>2.爬虫分类</h3><h4 id="通用网络爬虫：百度。谷歌。雅虎。。。搜索引擎"><a href="#通用网络爬虫：百度。谷歌。雅虎。。。搜索引擎" class="headerlink" title="通用网络爬虫：百度。谷歌。雅虎。。。搜索引擎"></a>通用网络爬虫：百度。谷歌。雅虎。。。搜索引擎</h4><p>特点：关键字获取既定的目标，覆盖率很大</p>
+<h4 id="聚焦网络爬虫"><a href="#聚焦网络爬虫" class="headerlink" title="聚焦网络爬虫"></a>聚焦网络爬虫</h4><p>特点：到互联网上有选择有目的去抓取特定的目标和相关的主题内容</p>
+<h4 id="增量式网购爬虫"><a href="#增量式网购爬虫" class="headerlink" title="增量式网购爬虫"></a>增量式网购爬虫</h4><p>特点：只采取增量式更新或者是只爬取新产生或者已经发生变化的网页</p>
+<h4 id="深层网络爬虫"><a href="#深层网络爬虫" class="headerlink" title="深层网络爬虫"></a>深层网络爬虫</h4><p>表层：通过传统搜索引擎打开的静态网页</p>
+<p>深层：大部分内容是不可以通过静态链接获取的，隐藏在搜索表单之后的一些数据，有可能需要用户提交一些关键词才可以获的web页面（比如登录后）</p>
+<h2 id="二、实战"><a href="#二、实战" class="headerlink" title="二、实战"></a>二、实战</h2><h3 id="1-requests"><a href="#1-requests" class="headerlink" title="1.requests"></a>1.requests</h3><h4 id="Requests：让HTTP服务人类"><a href="#Requests：让HTTP服务人类" class="headerlink" title="Requests：让HTTP服务人类"></a>Requests：让HTTP服务人类</h4><ol>
+<li>import requests  导入Requests模块</li>
+<li><p>尝试获取某个网页   r=requests.get(“<a href="https://api.github.com/events&quot;" target="_blank" rel="noopener">https://api.github.com/events&quot;</a>)   </p>
+<p>​    这样我们就有一个名叫r的Response对象，我们可以从这个对象里获取所有我们想要的信息</p>
+</li>
+<li><p>最简单的反爬取</p>
+<p>请求头 User-Agent</p>
+<p>用来确保你是用浏览器来访问的，不能用代码访问网站</p>
+<p>但是我们可以用代码来伪装浏览器</p>
+</li>
+<li><p>print(r)  打印输出http状态码    一般使用print(r.text)</p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 告诉服务器我们是浏览器  字典格式</span><br><span class="line">header=&#123;&apos;User-Agent&apos;: &apos;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36&apos;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>python函数调用，默认参数 a=“xx“，不传入a值则默认。如果实参写出a=，b=，这时候实参顺序可不跟形参对应，会自动匹配。不定长参数 “*a”和“**a”，一个星号表示以元组形式接收不定长的参数。两个星号表示以字典形式接收，此时实参传递时要先写上字典键名，如x=，y=，这时候 a={“x”：，“y”:}</p>
+</li>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">r.encoding = &quot;utf-8&quot;    //解决爬虫乱码问题</span><br></pre></td></tr></table></figure>
+</li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ol>
+<h3 id="2-Xpath-提取信息-参考博客链接内容"><a href="#2-Xpath-提取信息-参考博客链接内容" class="headerlink" title="2.Xpath 提取信息    参考博客链接内容"></a>2.Xpath 提取信息    <a href="https://www.jianshu.com/p/85a3004b5c06" target="_blank" rel="noopener">参考博客链接内容</a></h3><h4 id="介绍关系"><a href="#介绍关系" class="headerlink" title="介绍关系"></a>介绍关系</h4><p>1.父：每个元素以及属性都有一个父</p>
+<p>2.子：元素节点可有零个、一个或者多个子</p>
+<p>3.同胞：拥有相同的父的节点</p>
+<p>4.先辈：某节点的父、父的父，等等</p>
+<p>5.后代：某节点的子，子的子等等</p>
+<h4 id="Xpath语法"><a href="#Xpath语法" class="headerlink" title="Xpath语法"></a>Xpath语法</h4><h5 id="表达式-描述"><a href="#表达式-描述" class="headerlink" title="表达式                                  描述"></a>表达式                                  描述</h5><p>nodename                          选取此节点的所有子节点</p>
+<p>/                                            从根节点选取元素(直接子元素)</p>
+<p>//                                           从匹配选择的当前节点选择文档中的节点，而不考虑它们的位置（任意位置都能匹配）</p>
+<p>.                                             选取当前节点</p>
+<p>..                                            选取当前节点的父节点</p>
+<p>@                                           选取属性</p>
+<p>1.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 初始化  标准化</span><br><span class="line">html=etree.HTML(text)</span><br><span class="line"># 提取我们想要的信息 需要些xpath语法</span><br><span class="line">html.xpath(//li[@class=&quot;item-inactive&quot;])  //选取所有class属性为item-inactive的li元素</span><br></pre></td></tr></table></figure>
+<p>2.选取节点后获取值</p>
+<p>​     1.获取属性    xxxx/@class</p>
+<p>​      2.获取值        xxxx/text()</p>
+<p>3.zip拉链函数   ：两个list合成一个list，list内的一个对象是包含两个元素的元组。</p>
+<p>​     a=[1,2,3]    b=[4,5,6]    for x,y in zip(a,b)      x=1,y=4……</p>
+<p>4.保存数据</p>
+<p>​     with open(‘move.json’,’a’,encoding=’utf-8’) as f:</p>
+<p>​              f.write(data)</p>
+<p>5.第一版代码</p>
+<p>使用json.dumps是主要加上ensure_ascii=False，默认为true，默认使用ascii编码</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">Author:陈越鹏</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取页面数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getOnePage</span><span class="params">(page)</span>:</span></span><br><span class="line">    <span class="comment"># 路径</span></span><br><span class="line">    url = <span class="string">'https://movie.douban.com/top250?start=&#123;start&#125;'</span>.format(start=<span class="number">25</span>*page)</span><br><span class="line">    <span class="comment"># 告诉服务器我们是浏览器  字典格式</span></span><br><span class="line">    header = &#123;</span><br><span class="line">      <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span></span><br><span class="line">    &#125;</span><br><span class="line">    r = requests.get(url, headers=header)</span><br><span class="line">    r.encoding = <span class="string">"utf-8"</span></span><br><span class="line">    <span class="keyword">return</span> r.text</span><br><span class="line"></span><br><span class="line"><span class="comment"># 处理页面数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(text)</span>:</span></span><br><span class="line">    <span class="comment"># 初始化  标准化</span></span><br><span class="line">    html=etree.HTML(text)</span><br><span class="line">    <span class="comment"># 提取我们想要的信息 需要些xpath语法</span></span><br><span class="line">    titles=html.xpath(<span class="string">'//ol[@class="grid_view"]/li/div[@class="item"]//div[@class="hd"]//span[1][@class="title"]/text()'</span>)</span><br><span class="line">    maincontents=html.xpath(<span class="string">'//ol[@class="grid_view"]/li/div[@class="item"]//div[@class="bd"]/p[2]/span/text()'</span>)</span><br><span class="line">    print(titles)</span><br><span class="line">    print(maincontents)</span><br><span class="line">    <span class="keyword">for</span> title,maincontent <span class="keyword">in</span> zip(titles,maincontents):</span><br><span class="line">        item=&#123;<span class="string">"title"</span>:title,<span class="string">"maincontent"</span>:maincontent&#125;</span><br><span class="line">        <span class="keyword">yield</span> item</span><br><span class="line"><span class="comment"># 保存数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">saveFile</span><span class="params">(data)</span>:</span></span><br><span class="line">    <span class="keyword">with</span> open(<span class="string">'move.json'</span>, <span class="string">'a'</span>, encoding=<span class="string">'utf-8'</span>) <span class="keyword">as</span> f:</span><br><span class="line">        savedata=json.dumps(data,ensure_ascii=<span class="keyword">False</span>)+<span class="string">",\n"</span></span><br><span class="line">        f.write(savedata)</span><br><span class="line">        f.close()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 主函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="keyword">for</span> page <span class="keyword">in</span> range(<span class="number">10</span>):</span><br><span class="line">        data = getOnePage(page)</span><br><span class="line">        returns = parse(data)</span><br><span class="line">        <span class="keyword">for</span> d <span class="keyword">in</span> returns:</span><br><span class="line">            saveFile(d)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:     </span><br><span class="line">    index()</span><br></pre></td></tr></table></figure>
+<p>6.写入文件第一种方式</p>
+<p>   f= open()</p>
+<p>​    f.write()</p>
+<p>​    f.close()</p>
+<p>7.写文件第二种方式</p>
+<p> with open() as f:</p>
+<p>​       f.write()</p>
+<p>8,按行读取文件</p>
+<p>​       with open() as f:</p>
+<p>​                 for line in f:</p>
+<p>​                       print(line)</p>
+<p>9.<code>if __name__==&#39;__main__&#39;</code></p>
+<h2 id="完整示例-通过json获取动态页面数据-QQ音乐"><a href="#完整示例-通过json获取动态页面数据-QQ音乐" class="headerlink" title="完整示例 通过json获取动态页面数据   QQ音乐"></a>完整示例 通过json获取动态页面数据   QQ音乐</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">Author:陈越鹏</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">from</span> lxml <span class="keyword">import</span> etree</span><br><span class="line"><span class="keyword">import</span> json</span><br><span class="line"><span class="keyword">import</span> urllib</span><br><span class="line"><span class="keyword">import</span> pymysql</span><br><span class="line">count=<span class="number">0</span></span><br><span class="line"><span class="comment"># 连接数据库</span></span><br><span class="line">db = pymysql.connect(host=<span class="string">"localhost"</span>, user=<span class="string">"root"</span>, passwd=<span class="string">"chen714611"</span>, db=<span class="string">"bishe"</span>)</span><br><span class="line">cursor = db.cursor()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取歌手名称</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getSongname</span><span class="params">()</span>:</span></span><br><span class="line">    url=<span class="string">'https://u.y.qq.com/cgi-bin/musicu.fcg?-=getUCGI385957273946514&amp;g_tk=5381&amp;loginUin=1643544132&amp;hostUin=0&amp;format=json&amp;inCharset=utf8&amp;outCharset=utf-8&amp;notice=0&amp;platform=yqq.json&amp;needNewCode=0&amp;data=%7B%22comm%22%3A%7B%22ct%22%3A24%2C%22cv%22%3A0%7D%2C%22singerList%22%3A%7B%22module%22%3A%22Music.SingerListServer%22%2C%22method%22%3A%22get_singer_list%22%2C%22param%22%3A%7B%22area%22%3A-100%2C%22sex%22%3A-100%2C%22genre%22%3A-100%2C%22index%22%3A-100%2C%22sin%22%3A0%2C%22cur_page%22%3A1%7D%7D%7D'</span></span><br><span class="line">    header = &#123;</span><br><span class="line">        <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span></span><br><span class="line">    &#125;</span><br><span class="line">    r = requests.get(url, headers=header)</span><br><span class="line">    r.encoding = <span class="string">"utf-8"</span></span><br><span class="line">    <span class="keyword">return</span> r.json()[<span class="string">"singerList"</span>][<span class="string">"data"</span>][<span class="string">"singerlist"</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取页面数据</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getOnePage</span><span class="params">(name)</span>:</span></span><br><span class="line">    <span class="comment"># 路径   获取关键字歌曲信息 主要是歌曲id，在返回值中是mid</span></span><br><span class="line">    <span class="comment"># url = 'https://c.y.qq.com/soso/fcgi-bin/client_search_cp?ct=24&amp;qqmusic_ver=1298&amp;new_json=1&amp;remoteplace=txt.yqq.song&amp;searchid=60017520853485648&amp;t=0&amp;aggr=1&amp;cr=1&amp;catZhida=1&amp;lossless=0&amp;flag_qc=0&amp;p=&#123;page&#125;&amp;n=&#123;oneNum&#125;&amp;w=&#123;search&#125;&amp;g_tk=5381&amp;loginUin=1643544132&amp;hostUin=0&amp;format=json&amp;inCharset=utf8&amp;outCharset=utf-8&amp;notice=0&amp;platform=yqq.json&amp;needNewCode=0'.format(page=1, oneNum=50, search='许嵩')</span></span><br><span class="line">   <span class="comment"># 直接获取歌词</span></span><br><span class="line">    url=<span class="string">'https://c.y.qq.com/soso/fcgi-bin/client_search_cp?ct=24&amp;qqmusic_ver=1298&amp;remoteplace=txt.yqq.lyric&amp;searchid=99184843750496792&amp;aggr=0&amp;catZhida=1&amp;lossless=0&amp;sem=1&amp;t=7&amp;p=&#123;page&#125;&amp;n=&#123;num&#125;&amp;w=&#123;name&#125;&amp;g_tk=5381&amp;loginUin=1643544132&amp;hostUin=0&amp;format=json&amp;inCharset=utf8&amp;outCharset=utf-8&amp;notice=0&amp;platform=yqq.json&amp;needNewCode=0'</span>.format(page=<span class="number">1</span>,num=<span class="number">50</span>,name=name)</span><br><span class="line">    <span class="comment"># 告诉服务器我们是浏览器  字典格式</span></span><br><span class="line">    header = &#123;</span><br><span class="line">      <span class="comment"># 'Referer': 'https: // y.qq.com / portal / player.html',</span></span><br><span class="line">      <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span></span><br><span class="line">    &#125;</span><br><span class="line">    r = requests.get(url, headers=header)</span><br><span class="line">    r.encoding = <span class="string">"utf-8"</span></span><br><span class="line">    <span class="keyword">return</span> r.json()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">getOnePageZhou</span><span class="params">(name)</span>:</span></span><br><span class="line">    url=<span class="string">'https://c.y.qq.com/soso/fcgi-bin/client_search_cp?ct=24&amp;qqmusic_ver=1298&amp;remoteplace=txt.yqq.lyric&amp;searchid=99184843750496792&amp;aggr=0&amp;catZhida=1&amp;lossless=0&amp;sem=1&amp;t=7&amp;p=&#123;page&#125;&amp;n=&#123;num&#125;&amp;w=&#123;name&#125;&amp;g_tk=5381&amp;loginUin=1643544132&amp;hostUin=0&amp;format=json&amp;inCharset=utf8&amp;outCharset=utf-8&amp;notice=0&amp;platform=yqq.json&amp;needNewCode=0'</span>.format(page=<span class="number">1</span>,num=<span class="number">50</span>,name=name)</span><br><span class="line">    <span class="comment"># 告诉服务器我们是浏览器  字典格式</span></span><br><span class="line">    header = &#123;</span><br><span class="line">      <span class="comment"># 'Referer': 'https: // y.qq.com / portal / player.html',</span></span><br><span class="line">      <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span></span><br><span class="line">    &#125;</span><br><span class="line">    r = requests.get(url, headers=header)</span><br><span class="line">    r.encoding = <span class="string">"utf-8"</span></span><br><span class="line">    <span class="keyword">return</span> r.json()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 处理提取歌词等信息</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">parse</span><span class="params">(songdetail)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> item <span class="keyword">in</span> songdetail[<span class="string">"data"</span>][<span class="string">"lyric"</span>][<span class="string">"list"</span>]:</span><br><span class="line">        <span class="comment"># 拿到songmid对应的歌曲拼接路径</span></span><br><span class="line"></span><br><span class="line">        url=<span class="string">'https://u.y.qq.com/cgi-bin/musicu.fcg?-=getplaysongvkey23250862478882484&amp;g_tk=5381&amp;loginUin=1643544132&amp;hostUin=0&amp;format=json&amp;inCharset=utf8&amp;outCharset=utf-8&amp;notice=0&amp;platform=yqq.json&amp;needNewCode=0&amp;data=%7B%22req%22%3A%7B%22module%22%3A%22CDN.SrfCdnDispatchServer%22%2C%22method%22%3A%22GetCdnDispatch%22%2C%22param%22%3A%7B%22guid%22%3A%221806901424%22%2C%22calltype%22%3A0%2C%22userip%22%3A%22%22%7D%7D%2C%22req_0%22%3A%7B%22module%22%3A%22vkey.GetVkeyServer%22%2C%22method%22%3A%22CgiGetVkey%22%2C%22param%22%3A%7B%22guid%22%3A%221806901424%22%2C%22songmid%22%3A%5B%22&#123;songmid&#125;%22%5D%2C%22songtype%22%3A%5B0%5D%2C%22uin%22%3A%221643544132%22%2C%22loginflag%22%3A1%2C%22platform%22%3A%2220%22%7D%7D%2C%22comm%22%3A%7B%22uin%22%3A1643544132%2C%22format%22%3A%22json%22%2C%22ct%22%3A24%2C%22cv%22%3A0%7D%7D'</span>.format(songmid=item[<span class="string">"songmid"</span>])</span><br><span class="line"></span><br><span class="line">        header = &#123;</span><br><span class="line">            <span class="string">'User-Agent'</span>: <span class="string">'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.80 Safari/537.36'</span></span><br><span class="line">        &#125;</span><br><span class="line">        r = requests.get(url, headers=header)</span><br><span class="line">        r.encoding = <span class="string">"utf-8"</span></span><br><span class="line">        songitem=&#123;</span><br><span class="line">            <span class="string">"songword"</span>:item[<span class="string">"content"</span>],</span><br><span class="line">            <span class="string">"songname"</span>:item[<span class="string">"songname"</span>],</span><br><span class="line">            <span class="string">"singername"</span>:item[<span class="string">"singer"</span>][<span class="number">0</span>][<span class="string">"name"</span>],</span><br><span class="line">            <span class="string">"singermid"</span>:item[<span class="string">"singer"</span>][<span class="number">0</span>][<span class="string">"mid"</span>],</span><br><span class="line">            <span class="string">"songmid"</span>:item[<span class="string">"songmid"</span>],</span><br><span class="line">            <span class="string">"songimage"</span>:<span class="string">"https://y.gtimg.cn/music/photo_new/T002R300x300M000&#123;&#125;.jpg"</span>.format(item[<span class="string">"albummid"</span>]),</span><br><span class="line">            <span class="string">"songplay"</span>:r.json()[<span class="string">"req_0"</span>][<span class="string">"data"</span>][<span class="string">"sip"</span>][<span class="number">0</span>]+r.json()[<span class="string">"req_0"</span>][<span class="string">"data"</span>][<span class="string">"midurlinfo"</span>][<span class="number">0</span>][<span class="string">"purl"</span>]</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">yield</span> songitem</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存到数据库</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">savemysql</span><span class="params">(songitems)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> songitem <span class="keyword">in</span> songitems:</span><br><span class="line">        <span class="keyword">try</span>:</span><br><span class="line">            sql = <span class="string">"INSERT INTO songs(songname,singername,content,\</span></span><br><span class="line"><span class="string">                   songplay,songimage,songmid,singermid) VALUES"</span> \</span><br><span class="line">                  <span class="string">"(\"&#123;songname&#125;\",\"&#123;singername&#125;\",\"&#123;content&#125;\",\"&#123;songplay&#125;\",\"&#123;songimage&#125;\",\"&#123;songmid&#125;\",\"&#123;singermid&#125;\")"</span>\</span><br><span class="line">                .format( songname=songitem[<span class="string">"songname"</span>].replace(<span class="string">'"'</span>,<span class="string">"'"</span>), singername=songitem[<span class="string">"singername"</span>].replace(<span class="string">'"'</span>,<span class="string">"'"</span>), content=songitem[<span class="string">"songword"</span>].replace(<span class="string">'"'</span>,<span class="string">"'"</span>),\</span><br><span class="line">                    songplay=songitem[<span class="string">"songplay"</span>].replace(<span class="string">'"'</span>,<span class="string">"'"</span>) ,songimage=songitem[<span class="string">"songimage"</span>].replace(<span class="string">'"'</span>,<span class="string">"'"</span>),songmid=songitem[<span class="string">"songmid"</span>].replace(<span class="string">'"'</span>,<span class="string">"'"</span>),singermid=songitem[<span class="string">"singermid"</span>].replace(<span class="string">'"'</span>,<span class="string">"'"</span>)</span><br><span class="line">                         )</span><br><span class="line">            cursor.execute(sql)</span><br><span class="line">        <span class="keyword">except</span>:</span><br><span class="line">            print(sql)</span><br><span class="line">        <span class="comment"># 提交到数据库执行,这里切记要commit提交事务，否则无法完成保存。</span></span><br><span class="line">    db.commit()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 主函数</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">()</span>:</span></span><br><span class="line">    songnames=getSongname()</span><br><span class="line">    <span class="keyword">for</span> songname <span class="keyword">in</span> songnames:</span><br><span class="line">        <span class="keyword">if</span> songname[<span class="string">"singer_name"</span>]==<span class="string">'周杰伦'</span>:</span><br><span class="line">            print()</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(songname[<span class="string">"singer_mid"</span>])</span><br><span class="line">            print(songname[<span class="string">"singer_name"</span>])</span><br><span class="line">            print(songname[<span class="string">"singer_pic"</span>])</span><br><span class="line">            songdetail = getOnePage(songname[<span class="string">"singer_name"</span>])</span><br><span class="line">            songitems = parse(songdetail)</span><br><span class="line">            savemysql(songitems)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    index()</span><br><span class="line">    db.close()</span><br></pre></td></tr></table></figure>
+<h1 id="代码中yield表示返回数据，大致意思与return相似，不过yield返回后代码并不终止，而是继续返回，直到循环结束，这时候接收到的为一个列表，多次返回组成的列表"><a href="#代码中yield表示返回数据，大致意思与return相似，不过yield返回后代码并不终止，而是继续返回，直到循环结束，这时候接收到的为一个列表，多次返回组成的列表" class="headerlink" title="代码中yield表示返回数据，大致意思与return相似，不过yield返回后代码并不终止，而是继续返回，直到循环结束，这时候接收到的为一个列表，多次返回组成的列表"></a>代码中yield表示返回数据，大致意思与return相似，不过yield返回后代码并不终止，而是继续返回，直到循环结束，这时候接收到的为一个列表，多次返回组成的列表</h1>
+        </div>
+        
+<blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2020-03-05T13:44:31.435Z" itemprop="dateUpdated">2020-03-05 21:44:31</time>
+</span><br>
+
+
+        
+        转载注明出处，原文地址：<a href="/2020/03/05/Python爬虫/" target="_blank" rel="external">https://chenchenchenyue.github.io/2020/03/05/Python爬虫/</a>
+        
+    </div>
+    <footer>
+        <a href="https://chenchenchenyue.github.io">
+            <img src="/img/avatar.jpg" alt="Chen YuePeng">
+            Chen YuePeng
+        </a>
+    </footer>
+</blockquote>
+
+        
+            <div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+            
+        
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li></ul>
+
+            <div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/03/05/Python爬虫/&title=《Python爬虫》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/03/05/Python爬虫/&title=《Python爬虫》 — 陈越鹏&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+        </div>
+        
+            
+
+
+        
+    </div>
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2020/03/05/vue上手/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">vue上手</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="next">
+      <a href="/2020/03/05/python小总结/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">python小总结</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+    
+    
+        <aside class="post-widget">
+            <nav class="post-toc-wrap" id="post-toc">
+                <strong>目录</strong>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Python爬虫"><span class="post-toc-number">1.</span> <span class="post-toc-text">Python爬虫</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、Python爬虫快速入门"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">一、Python爬虫快速入门</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-什么是爬虫"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">1.什么是爬虫</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#网络爬虫：模拟浏览器访问和获取互联网信息的一个程序"><span class="post-toc-number">1.1.1.1.</span> <span class="post-toc-text">网络爬虫：模拟浏览器访问和获取互联网信息的一个程序</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-爬虫分类"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">2.爬虫分类</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#通用网络爬虫：百度。谷歌。雅虎。。。搜索引擎"><span class="post-toc-number">1.1.2.1.</span> <span class="post-toc-text">通用网络爬虫：百度。谷歌。雅虎。。。搜索引擎</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#聚焦网络爬虫"><span class="post-toc-number">1.1.2.2.</span> <span class="post-toc-text">聚焦网络爬虫</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#增量式网购爬虫"><span class="post-toc-number">1.1.2.3.</span> <span class="post-toc-text">增量式网购爬虫</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#深层网络爬虫"><span class="post-toc-number">1.1.2.4.</span> <span class="post-toc-text">深层网络爬虫</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、实战"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">二、实战</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-requests"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">1.requests</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Requests：让HTTP服务人类"><span class="post-toc-number">1.2.1.1.</span> <span class="post-toc-text">Requests：让HTTP服务人类</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-Xpath-提取信息-参考博客链接内容"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">2.Xpath 提取信息    参考博客链接内容</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#介绍关系"><span class="post-toc-number">1.2.2.1.</span> <span class="post-toc-text">介绍关系</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Xpath语法"><span class="post-toc-number">1.2.2.2.</span> <span class="post-toc-text">Xpath语法</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#完整示例-通过json获取动态页面数据-QQ音乐"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">完整示例 通过json获取动态页面数据   QQ音乐</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#代码中yield表示返回数据，大致意思与return相似，不过yield返回后代码并不终止，而是继续返回，直到循环结束，这时候接收到的为一个列表，多次返回组成的列表"><span class="post-toc-number">2.</span> <span class="post-toc-text">代码中yield表示返回数据，大致意思与return相似，不过yield返回后代码并不终止，而是继续返回，直到循环结束，这时候接收到的为一个列表，多次返回组成的列表</span></a></li></ol>
+            </nav>
+            <div class="toc-bar"><div>
+        </aside>
+    
+</article>
+
+    <div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        我们一起来让这个世界有趣一点
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/reward-wechat.jpg" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check"
+                data-wechat="/img/reward-wechat.jpg" data-alipay="/img/reward-alipay.jpg">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+    
+</div>
+
+        <footer class="footer">
+    
+    <div class="top">
+        
+            <p>
+    <span>Links：</span>
+    
+    <span class="blogroll-item">
+        <a href="https://github.com/chenchenchenyue" target="_blank">github</a>
+    </span>
+    
+</p>
+
+        
+    </div>
+    
+    <div class="bottom">
+        <p>
+            <span>
+                Chen YuePeng &copy; 2017 - 2020
+            </span>
+        		
+           	
+            
+            
+            <span>
+	            Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/codefine/hexo-theme-mellow" target="_blank">mellow</a>
+            </span>
+            
+            
+            
+
+            
+                
+<span class="site-uv" title="总访客量">
+    <i class="icon icon-user"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_uv"></i>
+</span>
+
+
+<span class="site-pv" title="总访问量">
+    <i class="icon icon-eye"></i>
+    <i class="busuanzi-value" id="busuanzi_value_site_pv"></i>
+</span>
+
+            
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/03/05/Python爬虫/&title=《Python爬虫》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/03/05/Python爬虫/&title=《Python爬虫》 — 陈越鹏&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKUlEQVR42u3aUY6DMAxF0e5/03QBLXCfnVbCufmqEAM5jGTZsV8vvI6PRe78vH59J3l+a8mQIeOxjONyEQaBkd/kvadUGTJkbMDgr+eb4+GYv/f0ugwZMmQ07iGbSD+KDBkyZHTC6HVRSophGTJkyOgUsWnJStLBtHheUIvLkCHjgYw0mfvn75/0N2TIkPEoxhGute2E2h6+PFOGDBmjGTzApcMWpCXQCbgyZMjYh5G2G2thN006+UgZ+j/IkCFjBKPTeuSNAd484MXzlwxXhgwZ4xjpgf7awVaSFBaP3mTIkDGIkYbaWrsxTQF5CJYhQ8YOjM4xWf8Art9AlSFDxj4MclN6rMaDLz/4u9mtDBkyhjJI8ZmG2vRArdOikCFDxj6MYi4ZJpS15ih6sgwZMrZh8EBJGgO1CbUFMyMyZMgYzeBH9v2WZ608Pr0iQ4aMDRjp2BbH11LJ+GkyZMgYzUgbA3wUg7c/a2H3ZnJEhgwZ4xi/KEfJB6oNpaGRCxkyZIxjkCBbOxTjW+k0R2XIkLEPo/bHtaK3lpiigCtDhowNGOQgvjYqkQ6KpWmoDBkypjKOcPGg2S9QSaCXIUPGDoxamOOkGpJvPcbIkCHjsQw+cpE+Og2j/JOhWlyGDBnjGGvjN9lELdW76cHKkCFDBk4c01QybljKkCFDBg64a6kpacHMiAwZMh7FIEUsKUprIbhWSMuQIWMfRq105Fshm1jVKpAhQ8Y4xhsvgA3L+8yvPAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+    
+    <!-- main-js -->
+<script type="text/javascript" src="//cdn.bootcss.com/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/plugins/fastclick.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/plugins/ios-orientationchange-fix.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/plugins/jquery.swipebox.min.js?v=1.3.2"></script>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+
+<script type="text/javascript" src="/js/method.js?v=1.3.2"></script>
+<script type="text/javascript" src="/js/blog.js?v=1.3.2"></script>
+
+<!-- third-party -->
+<script type="text/javascript">
+;( function( $ ) {
+
+	$( '.swipebox' ).swipebox({
+		hideCloseButtonOnMobile: true
+	});
+
+} )( jQuery );
+</script>
+
+
+
+
+
+
+<script type="text/javascript" src="/js/plugins/local_search.js?v=1.3.2"></script>
+<script type="text/javascript">
+	var search_path = "search.xml";
+	if (search_path.length === 0) {
+		search_path = "search.xml";
+	}
+	var path = "/" + search_path;
+	searchFunc(path, "local-search-input", "local-search-result");
+</script>
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    
+    
+
+
+
+
+
+    <!-- mathjax config similar to math.stackexchange -->
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+            processEscapes: true,
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+    });
+</script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+
+
+
+
+    
+</body>
+</html>
