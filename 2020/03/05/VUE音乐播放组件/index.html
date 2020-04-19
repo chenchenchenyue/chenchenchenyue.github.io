@@ -211,12 +211,14 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             
-            <h1 id="VUE音乐播放组件"><a href="#VUE音乐播放组件" class="headerlink" title="VUE音乐播放组件"></a>VUE音乐播放组件</h1><p><a href="https://segmentfault.com/a/1190000013029624" target="_blank" rel="noopener">参考文章</a>      <a href="https://github.com/SevenOutman/vue-aplayer/blob/develop/docs/README.zh-CN.md" target="_blank" rel="noopener">参考</a></p>
+            <h1 id="VUE音乐播放组件"><a href="#VUE音乐播放组件" class="headerlink" title="VUE音乐播放组件"></a>VUE音乐播放组件</h1><p><a href="https://segmentfault.com/a/1190000013029624" target="_blank" rel="noopener">参考文章</a>      <a href="https://github.com/SevenOutman/vue-aplayer/blob/develop/docs/README.zh-CN.md" target="_blank" rel="noopener">参考</a>    <a href="https://github.com/SevenOutman/vue-aplayer/blob/develop/docs/README.zh-CN.md" target="_blank" rel="noopener">官方github，最新最详细</a></p>
 <h2 id="1-报错"><a href="#1-报错" class="headerlink" title="1.报错"></a>1.报错</h2><p>[Vue-APlayer] NotAllowedError: play() failed because the user didn’t interact with the document first.</p>
 <p>1.解决：去掉autoplay</p>
 <p>2.解决 <a href="https://blog.csdn.net/jls/article/details/86527881" target="_blank" rel="noopener">https://blog.csdn.net/jls/article/details/86527881</a></p>
 <p>​    第一步，在chrome浏览器中输入：chrome://flags/#autoplay-policy</p>
 <p>​    第二步，在Autoplay policy中将Default改为No user gesture is required</p>
+<h2 id="2-切歌自动播放"><a href="#2-切歌自动播放" class="headerlink" title="2.切歌自动播放"></a>2.切歌自动播放</h2><p>在组件上使用autoplay，一打开页面便可自动播放，但是切歌时还是会暂停。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">that.$parent.$refs.playsongs.music=&#123;</span><br><span class="line">						src:row.fields.songplay,</span><br><span class="line">						artist:row.fields.singername,</span><br><span class="line">						title:row.fields.songname,</span><br><span class="line">						pic:row.fields.songimage,</span><br><span class="line">						lrc:row.fields.content,</span><br><span class="line">					&#125;</span><br><span class="line">		that.$parent.$refs.playsongs.$children[0].audio.autoplay=true</span><br></pre></td></tr></table></figure>
 
         </div>
         
@@ -224,7 +226,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2020-03-05T13:45:03.978Z" itemprop="dateUpdated">2020-03-05 21:45:03</time>
+    Last updated: <time datetime="2020-03-24T03:52:52.916Z" itemprop="dateUpdated">2020-03-24 11:52:52</time>
 </span><br>
 
 
@@ -293,7 +295,14 @@
         
     </div>
     
-<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="prev">
+      <a href="/2020/03/22/部署Django项目/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">部署Django项目</h4>
+      </a>
+    </div>
   
 
   
@@ -312,7 +321,7 @@
         <aside class="post-widget">
             <nav class="post-toc-wrap" id="post-toc">
                 <strong>目录</strong>
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#VUE音乐播放组件"><span class="post-toc-number">1.</span> <span class="post-toc-text">VUE音乐播放组件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-报错"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.报错</span></a></li></ol></li></ol>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#VUE音乐播放组件"><span class="post-toc-number">1.</span> <span class="post-toc-text">VUE音乐播放组件</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-报错"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1.报错</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-切歌自动播放"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2.切歌自动播放</span></a></li></ol></li></ol>
             </nav>
             <div class="toc-bar"><div>
         </aside>

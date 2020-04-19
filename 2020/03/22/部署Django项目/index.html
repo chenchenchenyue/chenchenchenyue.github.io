@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     
     
-    <title>hexo博客的上传 | 陈越鹏</title>
+    <title>部署Django项目 | 陈越鹏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="keywords" content="博客">
+    <meta name="keywords" content="Django">
     <link rel="shortcut icon" href="/img/favicon.ico">
     <link rel="stylesheet" href="/css/third-party/swipebox.min.css?v=1.3.2">
     <link rel="stylesheet" href="/css/style.css?v=1.3.2">
@@ -148,7 +148,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>hexo博客的上传</span>
+            <span>部署Django项目</span>
             
         </div>
         
@@ -161,11 +161,11 @@
 <header class="content-header post-header">
     <img src="https://source.unsplash.com/random/1712x400" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">hexo博客的上传</h1>
+        <h1 class="title">部署Django项目</h1>
         <h5 class="subtitle">
             
-                <time datetime="2019-01-08T14:44:03.000Z" itemprop="datePublished" class="page-time">
-  2019-01-08
+                <time datetime="2020-03-22T05:55:03.000Z" itemprop="datePublished" class="page-time">
+  2020-03-22
 </time>
 
 
@@ -192,12 +192,12 @@
 
 
 <div class="container body-wrap">
-    <article id="post-hexo博客的上传"
+    <article id="post-部署Django项目"
   class="post-article article-type-post" itemprop="blogPost">
     <div class="post-card">
-        <h1 class="post-card-title">hexo博客的上传</h1>
+        <h1 class="post-card-title">部署Django项目</h1>
         <div class="post-meta">
-            <time class="post-time" title="2019-01-08 22:44:03" datetime="2019-01-08T14:44:03.000Z"  itemprop="datePublished">2019-01-08</time>
+            <time class="post-time" title="2020-03-22 13:55:03" datetime="2020-03-22T05:55:03.000Z"  itemprop="datePublished">2020-03-22</time>
 
             
 
@@ -211,29 +211,30 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             
-            <h2 id="编辑软件：Typora百度去官网即可安装（免费且中文版）"><a href="#编辑软件：Typora百度去官网即可安装（免费且中文版）" class="headerlink" title="编辑软件：Typora百度去官网即可安装（免费且中文版）"></a>编辑软件：Typora百度去官网即可安装（免费且中文版）</h2><h3 id="在hexo的文件下右键Git-Bash-Here直接进入部署路径下"><a href="#在hexo的文件下右键Git-Bash-Here直接进入部署路径下" class="headerlink" title="在hexo的文件下右键Git Bash Here直接进入部署路径下"></a>在hexo的文件下右键Git Bash Here直接进入部署路径下</h3><h3 id="hexo-new-“xxxxx”-——-新建一个文章"><a href="#hexo-new-“xxxxx”-——-新建一个文章" class="headerlink" title="==hexo new “xxxxx”==——-新建一个文章"></a>==hexo new “xxxxx”==——-新建一个文章</h3><h3 id="在Typora软件中打开-source-posts文件夹编辑博客"><a href="#在Typora软件中打开-source-posts文件夹编辑博客" class="headerlink" title="在Typora软件中打开/source/_posts文件夹编辑博客"></a>在Typora软件中打开/source/_posts文件夹编辑博客</h3><h3 id="hexo-clean-——-清除缓存文件-和已生成的静态文件"><a href="#hexo-clean-——-清除缓存文件-和已生成的静态文件" class="headerlink" title="==hexo clean==——-清除缓存文件  和已生成的静态文件"></a>==hexo clean==——-清除缓存文件  和已生成的静态文件</h3><h3 id="hexo-g-——-生成静态文件"><a href="#hexo-g-——-生成静态文件" class="headerlink" title="==hexo g==——-生成静态文件"></a>==hexo g==——-生成静态文件</h3><h3 id="hexo-d-——-部署网站"><a href="#hexo-d-——-部署网站" class="headerlink" title="==hexo d==——-部署网站"></a>==hexo d==——-部署网站</h3><p>报错：YAMLException: can not read a block mapping entry; a multiline key may not be an implicit key at line 4, column 1:</p>
-<p>一般是文件头部忘记加空格添加标签的时候一定要换行，加 - 然后空一格写标签。如图：</p>
-<figure class="image-box">
-                <a rel=hexo博客的上传 href="http://chen.cypeng.cn/20200305.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/20200305.png" alt="如图" title="" class=""></a>
-                <p>如图</p>
-            </figure>
-<p>或者不换行，不加-，然后直接空格。如图</p>
-<figure class="image-box">
-                <a rel=hexo博客的上传 href="http://chen.cypeng.cn/202003052.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/202003052.png" alt="" title="" class=""></a>
-                <p></p>
-            </figure>
+            <h1 id="部署Django项目"><a href="#部署Django项目" class="headerlink" title="部署Django项目"></a>部署Django项目</h1><h3 id="1-uwsgi部署"><a href="#1-uwsgi部署" class="headerlink" title="1.uwsgi部署"></a>1.uwsgi部署</h3><p>安装Django：pip install django    并没有像博客内一样出错，提前修改pip指向python3</p>
+<p>安装uwsgi：pip install uwsgi</p>
+<p>安装mysqlclient</p>
+<h3 id="2-使用uwsgi运行"><a href="#2-使用uwsgi运行" class="headerlink" title="2.使用uwsgi运行"></a>2.使用uwsgi运行</h3><p>uwsgi –http :8000 –chdir /usr/local/zzzzpythonprojects/bisheDjango –wsgi-file bisheDjango/wsgi.py –master –processes 2 –threads 2 –stats 127.0.0.1:9191</p>
+<p>参考链接：<a href="https://blog.csdn.net/qq_30501975/article/details/80423547" target="_blank" rel="noopener">参考博客，仅用参考，内部有错</a></p>
+<h3 id="3-关闭进程"><a href="#3-关闭进程" class="headerlink" title="3.关闭进程"></a>3.关闭进程</h3><p>sudo fuser -k 8000/tcp        8000是端口号</p>
+<h2 id="使用nlp模型，服务器报错"><a href="#使用nlp模型，服务器报错" class="headerlink" title="使用nlp模型，服务器报错"></a>使用nlp模型，服务器报错</h2><h5 id="1-ModuleNotFoundError-No-module-named-‘-bz2’"><a href="#1-ModuleNotFoundError-No-module-named-‘-bz2’" class="headerlink" title="1.ModuleNotFoundError: No module named ‘_bz2’"></a>1.ModuleNotFoundError: No module named ‘_bz2’</h5><p><a href="https://blog.csdn.net/heros_never_die/article/details/79942124" target="_blank" rel="noopener">https://blog.csdn.net/heros_never_die/article/details/79942124</a></p>
+<h5 id="2-libbz2-so-1-0-cannot-open-shared-object-file"><a href="#2-libbz2-so-1-0-cannot-open-shared-object-file" class="headerlink" title="2. libbz2.so.1.0: cannot open shared object file"></a>2. libbz2.so.1.0: cannot open shared object file</h5><p><a href="https://blog.csdn.net/heros_never_die/article/details/79942124" target="_blank" rel="noopener">https://blog.csdn.net/heros_never_die/article/details/79942124</a></p>
+<h5 id="3-遇到502错误-invalid-request-block-size-解决方法"><a href="#3-遇到502错误-invalid-request-block-size-解决方法" class="headerlink" title="3.遇到502错误,invalid request block size 解决方法"></a>3.遇到502错误,invalid request block size 解决方法</h5><p><a href="https://blog.csdn.net/weixin_34112208/article/details/93235749?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task" target="_blank" rel="noopener">https://blog.csdn.net/weixin_34112208/article/details/93235749?depth_1-utm_source=distribute.pc_relevant.none-task&amp;utm_source=distribute.pc_relevant.none-task</a></p>
+<p>接受参数长度过大，可以设置</p>
+<p>uwsgi –http :8000 –chdir /usr/local/zzzzpythonprojects/bisheDjango –wsgi-file bisheDjango/wsgi.py –master –processes 2 –buffer-size 32768 –threads 2 –stats 127.0.0.1:9191</p>
+
         </div>
         
 <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-03-05T13:58:11.858Z" itemprop="dateUpdated">2020-03-05 21:58:11</time>
+    Last updated: <time datetime="2020-03-24T05:44:22.811Z" itemprop="dateUpdated">2020-03-24 13:44:22</time>
 </span><br>
 
 
         
-        转载注明出处，原文地址：<a href="/2019/01/08/hexo博客的上传/" target="_blank" rel="external">https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/</a>
+        转载注明出处，原文地址：<a href="/2020/03/22/部署Django项目/" target="_blank" rel="external">https://chenchenchenyue.github.io/2020/03/22/部署Django项目/</a>
         
     </div>
     <footer>
@@ -253,7 +254,7 @@
         
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Django/">Django</a></li></ul>
 
             <div class="page-share-wrap">
     
@@ -262,7 +263,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/&title=《hexo博客的上传》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/03/22/部署Django项目/&title=《部署Django项目》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -274,7 +275,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/&title=《hexo博客的上传》 — 陈越鹏&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/03/22/部署Django项目/&title=《部署Django项目》 — 陈越鹏&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -300,18 +301,18 @@
 <nav class="post-nav flex-row flex-justify-between">
   
     <div class="prev">
-      <a href="/2019/01/09/Mybatis延迟加载/" id="post-prev" class="post-nav-link">
+      <a href="/2020/04/17/第十四章-概率图模型/" id="post-prev" class="post-nav-link">
         <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
-        <h4 class="title">Mybatis延迟加载</h4>
+        <h4 class="title">No title</h4>
       </a>
     </div>
   
 
   
     <div class="next">
-      <a href="/2019/01/08/SSM整合搭建/" id="post-next" class="post-nav-link">
+      <a href="/2020/03/05/VUE音乐播放组件/" id="post-next" class="post-nav-link">
         <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">SSM整合搭建</h4>
+        <h4 class="title">VUE音乐播放组件</h4>
       </a>
     </div>
   
@@ -323,7 +324,7 @@
         <aside class="post-widget">
             <nav class="post-toc-wrap" id="post-toc">
                 <strong>目录</strong>
-                <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#编辑软件：Typora百度去官网即可安装（免费且中文版）"><span class="post-toc-number">1.</span> <span class="post-toc-text">编辑软件：Typora百度去官网即可安装（免费且中文版）</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在hexo的文件下右键Git-Bash-Here直接进入部署路径下"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">在hexo的文件下右键Git Bash Here直接进入部署路径下</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hexo-new-“xxxxx”-——-新建一个文章"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">==hexo new “xxxxx”==——-新建一个文章</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#在Typora软件中打开-source-posts文件夹编辑博客"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">在Typora软件中打开/source/_posts文件夹编辑博客</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hexo-clean-——-清除缓存文件-和已生成的静态文件"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">==hexo clean==——-清除缓存文件  和已生成的静态文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hexo-g-——-生成静态文件"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">==hexo g==——-生成静态文件</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#hexo-d-——-部署网站"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">==hexo d==——-部署网站</span></a></li></ol></li></ol>
+                <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#部署Django项目"><span class="post-toc-number">1.</span> <span class="post-toc-text">部署Django项目</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#1-uwsgi部署"><span class="post-toc-number">1.0.1.</span> <span class="post-toc-text">1.uwsgi部署</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-使用uwsgi运行"><span class="post-toc-number">1.0.2.</span> <span class="post-toc-text">2.使用uwsgi运行</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#3-关闭进程"><span class="post-toc-number">1.0.3.</span> <span class="post-toc-text">3.关闭进程</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用nlp模型，服务器报错"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">使用nlp模型，服务器报错</span></a></li></ol></li></ol>
             </nav>
             <div class="toc-bar"><div>
         </aside>
@@ -419,7 +420,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/&title=《hexo博客的上传》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/03/22/部署Django项目/&title=《部署Django项目》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -431,7 +432,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2019/01/08/hexo博客的上传/&title=《hexo博客的上传》 — 陈越鹏&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/03/22/部署Django项目/&title=《部署Django项目》 — 陈越鹏&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -443,7 +444,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACpUlEQVR42u3aQW7DQAgF0Nz/0u22UmTnA0PqxfOqSix73lQaCPB6xdfP2/X38/d77p+TfH7/rsMXHh4e3njpV4+evPJ+I662Jl/P5ebi4eHhrfGSBd2fuveMPGDcU6sBBg8PD+85vGTRSZabBJj8fjw8PLxn8hLSJEHPCx94eHh4/8vLH50c3HnC3Vv6Sq0FDw8PL+b1irD/+/dKfw8PDw9v3FU/FSTmYaO5Wjw8PLwF3qS4UH3xPBRV14mHh4e3wasuOi9ATA70/JkfvsXDw8P7Cq9KyttXyULzFloUMPDw8PDWeN8ckLpfUFLIKAQwPDw8vDVe8lO/Fzyq31aHEsoNMDw8PLxDvElTKi+8Vou5eZD40N/Dw8PDO8qrHvqFEmrxiE+GFarpOB4eHt4er5dqT4q28wLxJE3Hw8PDm/DyJLh3Z6+wW8VcPg0PDw9vmZeHh0kYSNL03lDC5dAVHh4e3lFelTRpnuUbkW9ruUyMh4eHd5RXHYSqHujVtllviz+EBDw8PLwxbxRDqiNQvWbVpM2Gh4eHt8DrHcd5Op4XZHvl3ejfg4eHh/cVXq+kmwOqhYZRsMHDw8Nb4PXS5eRBp4YAeo06PDw8vD3epGCav3hSzmgm03h4eHjLvPmIwEaRIh/2KrfB8PDw8BZ4Z4cAku2bvDeaicDDw8Nb41VfUKXmBVw8PDy85/OST5LkeNJI66XsUTECDw8Pb8z7KV552l0utrYaZh+QeHh4eAu8Xil2MmqQjAjkW3kAhoeHh9fizVPk3ihA8kk+htVMrPHw8PAGvHljbH705xtU2Cw8PDy8x/CqwwSjjH4SkPDw8PAezEuS3cmh3wsweHh4eHu8alpcLf7mg1P395fXhoeHh7fAm//gn4wIVIu/IwYeHh7elPcLgYAW22SD2+0AAAAASUVORK5CYII=" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACq0lEQVR42u3aO27kQAwFwLn/pWeBjbzBSI+flr1wdWTIcqtLgUiTfL3i9f67kp8/Xfl6/fopybOWFx4eHl7r6J/W9dbXgN5B892uz4yHh4d3mtcLBtVvcjXMJOe5seDh4eF9Ky9Pi5MjVg+Kh4eH9z/ycliSIl8nx73ghIeHh/ckL3lMUnq4vt4rcOTnwcPDw3uGt9sAe+bnb+vv4eHh/Xreu7XyskUeJPL0unBOPDw8vAO8aom22uLqvab8nihg4OHh4R3gnWhiXafF8yujojMeHh7egNf7ZFdLBpO3Xg0hH5NpPDw8vFVeddwqv5Kn40mYyYcM8PDw8E7ztpLaeXpdHTW42Q0PDw/vcV5v3Go+GtUr8kb9PTw8PLxVXq+ZNAkn5RS5+M8AHh4e3jleUgLIj7s7ENBrxf0TGPDw8PAO8PKNJkMDeUusl8q/8veKh4eHN+CVk9T4U179bT6O0NsZDw8P7zQv2aL6ES80rlolj5uQg4eHh7fE2/2452l3r4icvG48PDy807xki0kbbDIE8GqtqPqCh4eHt8SbjzrlRY1qWbY6ZICHh4d3jldNjqvBY6t027wfDw8P7wAvbzVVyxP5QatJfPkePDw8vFVeL7XtTTQVBqRaJY+buIeHh4e3xMsDQ142rabR1SvVsISHh4d3glcts+Zpca9QOwkSoz/Aw8PDi3l5saAaGCbISbEYDw8P70leTpok0Mlz58ULPDw8vBO8d3H1hgOqbba89HDzmvDw8PAO8LaCR3kQqpWOL5Pw8PDwBrze4FSeBCcJ92Sfm9Pi4eHhHePtJsHV8DBvhuHh4eH9fN6kgtrbp7o/Hh4e3k/g7abFc1i0Mx4eHt4xXvIRn4eQ92AlifgoRuHh4eHFvF4DLHlN1ft7peSFLh8eHh5eyvsDcFl9grwKM0kAAAAASUVORK5CYII=" alt="微信分享二维码">
 </div>
 
 
