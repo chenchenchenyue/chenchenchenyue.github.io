@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     
-    <title>No title | 陈越鹏</title>
+    <title>陈越鹏</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     <meta name="keywords" content="">
@@ -148,7 +148,7 @@
           <i class="icon icon-lg icon-navicon"></i>
         </a>
         <div class="flex-col header-title ellipsis">
-            <span>No title</span>
+            <span></span>
             
         </div>
         
@@ -161,7 +161,7 @@
 <header class="content-header post-header">
     <img src="https://source.unsplash.com/random/1712x400" class="header-bg">
     <div class="container fade-scale">
-        <h1 class="title">No title</h1>
+        <h1 class="title"></h1>
         <h5 class="subtitle">
             
                 <time datetime="2020-04-17T06:10:45.933Z" itemprop="datePublished" class="page-time">
@@ -195,7 +195,7 @@
     <article id="post-第十四章-概率图模型"
   class="post-article article-type-post" itemprop="blogPost">
     <div class="post-card">
-        <h1 class="post-card-title">No title</h1>
+        <h1 class="post-card-title"></h1>
         <div class="post-meta">
             <time class="post-time" title="2020-04-17 14:10:45" datetime="2020-04-17T06:10:45.933Z"  itemprop="datePublished">2020-04-17</time>
 
@@ -219,13 +219,13 @@
 <hr>
 <h1 id="第十四章-概率图模型"><a href="#第十四章-概率图模型" class="headerlink" title="第十四章 概率图模型"></a>第十四章 概率图模型</h1><h2 id="一、隐马尔可夫模型（HMM）现在一般使用RNN"><a href="#一、隐马尔可夫模型（HMM）现在一般使用RNN" class="headerlink" title="一、隐马尔可夫模型（HMM）现在一般使用RNN"></a>一、隐马尔可夫模型（HMM）现在一般使用RNN</h2><h3 id="1-组成"><a href="#1-组成" class="headerlink" title="1.组成"></a>1.组成</h3><h5 id="·状态变量：通常是隐藏的，不可被观测到的。-y1，y2，…yn-，yi表示第i时刻的系统状态。在隐马尔可夫模型中，系统通常在多个状态-s1，s2，s3…sN-之间转换，yi的取值范围为N个可能值的离散空间"><a href="#·状态变量：通常是隐藏的，不可被观测到的。-y1，y2，…yn-，yi表示第i时刻的系统状态。在隐马尔可夫模型中，系统通常在多个状态-s1，s2，s3…sN-之间转换，yi的取值范围为N个可能值的离散空间" class="headerlink" title="·状态变量：通常是隐藏的，不可被观测到的。{y1，y2，…yn}，yi表示第i时刻的系统状态。在隐马尔可夫模型中，系统通常在多个状态({s1，s2，s3…sN})之间转换，yi的取值范围为N个可能值的离散空间"></a>·状态变量：通常是隐藏的，不可被观测到的。{y1，y2，…yn}，yi表示第i时刻的系统状态。在隐马尔可夫模型中，系统通常在多个状态({s1，s2，s3…sN})之间转换，yi的取值范围为N个可能值的离散空间</h5><h5 id="·观测变量：-x1，x2，…xn-，xi表示第i时刻的观测值，xi的取值可以是连续的，也可以是离散的，为了方便讨论，仅考虑离散型观测变量"><a href="#·观测变量：-x1，x2，…xn-，xi表示第i时刻的观测值，xi的取值可以是连续的，也可以是离散的，为了方便讨论，仅考虑离散型观测变量" class="headerlink" title="·观测变量：{x1，x2，…xn}，xi表示第i时刻的观测值，xi的取值可以是连续的，也可以是离散的，为了方便讨论，仅考虑离散型观测变量"></a>·观测变量：{x1，x2，…xn}，xi表示第i时刻的观测值，xi的取值可以是连续的，也可以是离散的，为了方便讨论，仅考虑离散型观测变量</h5><p>方便理解：讲稿子，状态变量看做广播员的稿子内容，观测变量是听众的接受值</p>
 <h3 id="2-如图"><a href="#2-如图" class="headerlink" title="2.如图"></a>2.如图</h3><figure class="image-box">
-                <a rel=No title href="http://chen.cypeng.cn/202004171.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/202004171.png" alt="http://chen.cypeng.cn/202004171.png" title="" class=""></a>
+                <a rel= href="http://chen.cypeng.cn/202004171.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/202004171.png" alt="http://chen.cypeng.cn/202004171.png" title="" class=""></a>
                 <p>http://chen.cypeng.cn/202004171.png</p>
             </figure>
 <p>观测变量的值仅依赖状态变量</p>
 <p>t时刻的状态yt仅依赖t-1时刻的y(t-1),与此前t-2个状态无关</p>
 <h5 id="马尔可夫链：（默认为1阶马尔可夫链）系统下一时刻的状态仅由当前状态决定，不依赖于以往的任何状态"><a href="#马尔可夫链：（默认为1阶马尔可夫链）系统下一时刻的状态仅由当前状态决定，不依赖于以往的任何状态" class="headerlink" title="马尔可夫链：（默认为1阶马尔可夫链）系统下一时刻的状态仅由当前状态决定，不依赖于以往的任何状态"></a>马尔可夫链：（默认为1阶马尔可夫链）系统下一时刻的状态仅由当前状态决定，不依赖于以往的任何状态</h5><h3 id="3-基本问题和应用"><a href="#3-基本问题和应用" class="headerlink" title="3.基本问题和应用"></a>3.基本问题和应用</h3><figure class="image-box">
-                <a rel=No title href="http://chen.cypeng.cn/202004181.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/202004181.png" alt="" title="" class=""></a>
+                <a rel= href="http://chen.cypeng.cn/202004181.png" class="swipebox" title=undefined><img src="http://chen.cypeng.cn/202004181.png" alt="" title="" class=""></a>
                 <p></p>
             </figure>
         </div>
@@ -234,7 +234,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-04-18T15:34:43.920Z" itemprop="dateUpdated">2020-04-18 23:34:43</time>
+    最後更新時間：<time datetime="2020-04-18T15:34:43.920Z" itemprop="dateUpdated">2020-04-18 23:34:43</time>
 </span><br>
 
 
@@ -266,7 +266,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/04/17/第十四章-概率图模型/&title=《No title》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/04/17/第十四章-概率图模型/&title=陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -278,7 +278,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/04/17/第十四章-概率图模型/&title=《No title》 — 陈越鹏&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/04/17/第十四章-概率图模型/&title=陈越鹏&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
@@ -416,7 +416,7 @@
     <ul class="reset share-icons">
       
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/04/17/第十四章-概率图模型/&title=《No title》 — 陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://chenchenchenyue.github.io/2020/04/17/第十四章-概率图模型/&title=陈越鹏&pic=https://chenchenchenyue.github.io/img/avatar.jpg" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -428,7 +428,7 @@
       </li>
       
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/04/17/第十四章-概率图模型/&title=《No title》 — 陈越鹏&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://chenchenchenyue.github.io/2020/04/17/第十四章-概率图模型/&title=陈越鹏&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
